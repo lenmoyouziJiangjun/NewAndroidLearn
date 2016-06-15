@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">MDLearn</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+
+
+    <string name="recycler_view">RecyclerView/RecyclerViewActivity</string>
+    <string name="animated_recycler_view">RecyclerView/AnimatedRecyclerView</string>
+    <string name="linear_layout_manager">RecyclerView/Linear Layout Manager</string>
+    <string name="grid_layout_manager">RecyclerView/Grid Layout Manager</string>
+    <string name="staggered_grid_layout_manager">RecyclerView/Staggered Grid Layout Manager</string>
+    <string name="async_list_util">RecyclerView/AsyncListUtil</string>
+    <string name="checkbox_orientation">Horz.</string>
+    <string name="checkbox_reverse">Rev.</string>
+    <string name="checkbox_layout_dir">Layout Dir</string>
+    <string name="checkbox_stack_from_end">Stack From End</string>
+    <string name="enableAnimations">Animate</string>
+    <string name="enablePredictiveAnimations">Predictive</string>
+    <string name="enableInPlaceChange">In Place Change</string>
+    <string name="add_item">Add</string>
+    <string name="delete_item">Del</string>
+    <string name="add_delete_item">A+D</string>
+    <string name="delete_add_item">D+A</string>
+    <string name="d1a2d3">d1a2d3</string>
+    <string name="vertical">vertical</string>
+
+    <string name="nested_scroll_long_text">This is some long text. It just keeps going. Look at it. Scroll it. Scroll the nested version of it. This is some long text. It just keeps going. Look at it. Scroll it. Scroll the nested version of it. This is some long text. It just keeps going. Look at it. Scroll it. Scroll the nested version of it. This is some long text. It just keeps going. Look at it. Scroll it. Scroll the nested version of it. This is some long text. It just keeps going. Look at it. Scroll it. Scroll the nested version of it. This is some long text. It just keeps going. Look at it. Scroll it. Scroll the nested version of it. This is some long text. It just keeps going. Look at it. Scroll it. Scroll the nested version of it. This is some long text. It just keeps going. Look at it. Scroll it. Scroll the nested version of it. This is some long text. It just keeps going. Look at it. Scroll it. Scroll the nested version of it. This is some long text. It just keeps going. Look at it. Scroll it. Scroll the nested version of it.</string>
+
+    <string name="drawable_compat_no_tint">Not tint</string>
+    <string name="drawable_compat_color_tint">Color tint</string>
+    <string name="drawable_compat_color_list_tint">Color state list</string>
+
+
+</resources>

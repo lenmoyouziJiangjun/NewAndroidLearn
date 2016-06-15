@@ -1,0 +1,1 @@
+include ':App-release', ':CommonUi', ':CommonHttp', ':App-core', ':App-http', ':CommonUtil', ':CommonEncryption', ':MDLearn'

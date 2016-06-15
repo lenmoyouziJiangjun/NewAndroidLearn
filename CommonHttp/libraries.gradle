@@ -1,0 +1,21 @@
+ext{
+
+    version_gson = '2.6.2'
+//    version_appcompat = '23.2.1'
+    version_retrofit = '2.0.2'
+    version_okio = '1.7.0'
+    version_okhttp = '3.2.0'
+    version_webserver = '3.2.0'
+    version_converter = '2.0.2'
+    version_converter_gson='2.0.2'
+    libraries = [
+//            appcompat : "com.android.support:appcompat-v7:${version_appcompat}",
+            retrofit : "com.squareup.retrofit2:retrofit:${version_retrofit}",
+            okio : "com.squareup.okio:okio:${version_okio}",
+            gson : "com.google.code.gson:gson:${version_gson}",
+            okhttp:"com.squareup.okhttp3:okhttp:${version_okhttp}",
+            webserver: "com.squareup.okhttp3:mockwebserver:${version_webserver}",
+            retrofitconverters: "com.squareup.retrofit2:retrofit-converters:${version_converter}",
+            convertergson: "com.squareup.retrofit2:converter-gson:${version_converter_gson}"
+    ]
+}

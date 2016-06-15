@@ -1,0 +1,22 @@
+// build a map of the dependency artifacts to use.  Allows centralized definition of the version of artifacts to
+// use.  In that respect it serves a role similar to <dependencyManagement> in Maven
+ext {
+    version_support = '23.2.1'
+    version_eventbus = '2.4.0'
+    version_mutidex = '1.0.0'
+    version_dagger = '2.4'
+    version_butterknife = '6.1.0'
+    libraries = [
+            appcompat_v7  : "com.android.support:appcompat-v7:${version_support}",
+            annotations   : "com.android.support:support-annotations:${version_support}",
+            eventbus      : "de.greenrobot:eventbus:${version_eventbus}",
+            multidex      : "com.android.support:multidex:${version_mutidex}",
+            design        : "com.android.support:design:${version_support}",
+            recyclerview  : "com.android.support:recyclerview-v7:${version_support}",
+            cardview      : "com.android.support:cardview-v7:${version_support}",
+            dagger        : "com.google.dagger:dagger:${version_dagger}",
+            daggerCompiler: "com.google.dagger:dagger-compiler:${version_dagger}",
+//            butterknife   : "com.jakewharton:butterknife:${version_butterknife}"
+    ]
+}
+
