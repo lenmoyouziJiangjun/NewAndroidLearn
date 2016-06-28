@@ -122,4 +122,7 @@ public class LogUtils {
         }
     }
 
+
+    private static void writeLog2file(){}
+
 }

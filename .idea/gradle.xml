@@ -5,7 +5,7 @@
       <GradleProjectSettings>
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="C:\soft\android-studio\gradle\gradle-2.10" />
+        <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-2.10" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -14,8 +14,10 @@
             <option value="$PROJECT_DIR$/App-release" />
             <option value="$PROJECT_DIR$/CommonEncryption" />
             <option value="$PROJECT_DIR$/CommonHttp" />
+            <option value="$PROJECT_DIR$/CommonRecyclerview" />
             <option value="$PROJECT_DIR$/CommonUi" />
             <option value="$PROJECT_DIR$/CommonUtil" />
+            <option value="$PROJECT_DIR$/CommonViewpager" />
             <option value="$PROJECT_DIR$/MDLearn" />
           </set>
         </option>
@@ -27,8 +29,10 @@
             <option value="$PROJECT_DIR$/App-release" />
             <option value="$PROJECT_DIR$/CommonEncryption" />
             <option value="$PROJECT_DIR$/CommonHttp" />
+            <option value="$PROJECT_DIR$/CommonRecyclerview" />
             <option value="$PROJECT_DIR$/CommonUi" />
             <option value="$PROJECT_DIR$/CommonUtil" />
+            <option value="$PROJECT_DIR$/CommonViewpager" />
             <option value="$PROJECT_DIR$/MDLearn" />
           </set>
         </option>

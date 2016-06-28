@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.lll.learn"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lll.learn">
 
     <application
         android:allowBackup="true"
         android:label="@string/app_name"
         android:supportsRtl="true">
-        <activity android:name=".AsyncListUtilActivity"/>
-        <activity android:name=".DrawerLayoutActivity"/>
-        <activity android:name=".LinearLayoutManagerActivity">
-        </activity>
-        <activity android:name=".StaggeredGridLayoutManagerActivity"/>
-        <activity android:name=".GridLayoutManagerActivity"/>
-        <activity android:name=".v4.NestedScrollActivity">
-        </activity>
-        <activity android:name=".v4.DrawableCompatActivity">
-        </activity>
+        <activity android:name=".AsyncListUtilActivity" />
+        <activity android:name=".DrawerLayoutActivity" />
+        <activity android:name=".LinearLayoutManagerActivity" />
+        <activity android:name=".StaggeredGridLayoutManagerActivity" />
+        <activity android:name=".GridLayoutManagerActivity" />
+        <activity android:name=".v4.NestedScrollActivity" />
+        <activity
+            android:name=".v4.DrawableCompatActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v4.NestedScroll2Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".md.StatylePicActivity"
+            android:label="@string/title_activity_statyle_pic"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".md.MDLearnActivity"></activity>
     </application>
 
 </manifest>
