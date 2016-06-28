@@ -16,7 +16,8 @@ public class MDLearnActivity extends BaseListStringActivity {
     public Map getDatas() {
         Map<String,Class> datas=new HashMap();
         datas.put("状态栏沉浸效果",StatylePicActivity.class);
-        datas.put("状态栏显示",StatylePicActivity.class);
+        datas.put("状态栏显示",TestStatus2Activity.class);
+        datas.put("状态栏延升",ImageStatusActivity.class);
         return datas;
     }
 

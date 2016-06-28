@@ -1,4 +1,4 @@
-package com.tima.common.util;
+package com.lll.common.util;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;

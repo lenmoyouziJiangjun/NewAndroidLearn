@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.tima.common.util.CommonUtils;
+//import com.tima.common.util.CommonUtils;
 import com.tima.core.R;
 import com.tima.core.mvp.IBaseTask;
 

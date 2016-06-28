@@ -1,10 +1,8 @@
 package com.tima.app.http;
 
 import com.tima.common.http.HttpClient;
-import com.tima.common.util.LogUtils;
-import com.tima.common.util.PropertyUtils;
-
-import java.util.Map;
+import com.lll.common.util.LogUtils;
+import com.lll.common.util.PropertyUtils;
 
 /**
  * Description:

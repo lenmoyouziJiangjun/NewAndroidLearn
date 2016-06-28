@@ -22,7 +22,13 @@
             android:name=".md.StatylePicActivity"
             android:label="@string/title_activity_statyle_pic"
             android:theme="@style/AppTheme" />
-        <activity android:name=".md.MDLearnActivity"></activity>
+        <activity android:name=".md.MDLearnActivity" />
+        <activity
+            android:name=".md.TestStatus2Activity"
+            android:label="@string/title_activity_test_status2"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".md.ImageStatusActivity"
+            />
     </application>
 
 </manifest>

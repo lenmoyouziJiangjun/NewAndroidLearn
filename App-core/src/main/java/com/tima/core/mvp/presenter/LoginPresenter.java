@@ -6,10 +6,8 @@ import com.tima.app.http.TimaHttpClient;
 import com.tima.app.http.domin.LoginRequest;
 import com.tima.app.http.response.BaseResponse;
 import com.tima.app.http.service.IBaseService;
-import com.tima.common.util.LogUtils;
+import com.lll.common.util.LogUtils;
 import com.tima.core.mvp.task.ILoginTask;
-
-import org.bouncycastle.jcajce.provider.symmetric.ARC4;
 
 import java.util.Map;
 
