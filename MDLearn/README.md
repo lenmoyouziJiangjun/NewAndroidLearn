@@ -1,6 +1,6 @@
 # MD风格学习
-  ##statbar沉浸效果
-    ###4.4系统通过如下步骤
+  ## statbar沉浸效果
+    ### 4.4系统通过如下步骤
     <pre><code>
          //1.指定样式
          <style name="AppTheme" parent="BaseTheme">
@@ -26,9 +26,9 @@
          //3、默认情况会将toolBar上移,解决上移办法:
          Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar);
          setSupportActionBar(mToolbar);
-    </code></pre>
+   </code></pre>
 
-    ###5.0.1系统(21)版本更改颜色或图片透上去的效果:
+    ### 5.0.1系统(21)版本更改颜色或图片透上去的效果:
     <pre><code>
            1、设置stytle
            //公共的样式
@@ -87,5 +87,6 @@
 
            </android.support.v4.widget.DrawerLayout>
     </code></pre>
-    ###开源项目SystemBarTint(https://github.com/lenmoyouziJiangjun/SystemBarTint)
+
+    ###  开源项目SystemBarTint(https://github.com/lenmoyouziJiangjun/SystemBarTint)
 
