@@ -4,7 +4,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.view.ViewGroup;
 
+import com.lll.learn.DividerItemDecoration;
 import com.lll.learn.R;
 
 import java.util.List;
@@ -34,7 +37,20 @@ public abstract class BaseListStringActivity extends AppCompatActivity {
 
         mRecyclerView.setLayoutManager(manager);
         mDatas = getDatas();
-        mRecyclerView.setAdapter(new SimpleStringAdapter(mDatas,this));
+        mRecyclerView.setAdapter(new SimpleStringAdapter(mDatas,this){
+            @Override
+            public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+                final ViewHolder holder = super.onCreateViewHolder(parent,viewType);
+                holder.mTextView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        startActivity(holder.mTextView.getText().toString());
+                    }
+                });
+                return  holder;
+            }
+        });
+        mRecyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST));
     }
 
     public abstract Map<String,Class> getDatas();

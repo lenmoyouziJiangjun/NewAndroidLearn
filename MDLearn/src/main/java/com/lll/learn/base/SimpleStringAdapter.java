@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.Set;
 
 /**
@@ -47,11 +49,11 @@ public class SimpleStringAdapter extends RecyclerView.Adapter<SimpleStringAdapte
         ViewHolder h = new ViewHolder(new TextView(parent.getContext()));
 
         h.mTextView.setMinimumHeight(128);
-        h.mTextView.setPadding(20, 0, 20, 0);
+//        h.mTextView.setPadding(20, 0, 20, 0);
         h.mTextView.setFocusable(true);
-        h.mTextView.setBackgroundResource(getBackgroundColor(1));
+//        h.mTextView.setBackgroundColor(getBackgroundColor(1));
         RecyclerView.LayoutParams lp = new RecyclerView.LayoutParams(
-                ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT);
         lp.leftMargin = 10;
         lp.rightMargin = 5;
@@ -70,7 +72,7 @@ public class SimpleStringAdapter extends RecyclerView.Adapter<SimpleStringAdapte
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.mTextView.setText(position + ":" + mKeys.get(position));
-        holder.mTextView.setMinHeight((200 + mKeys.get(position).length() * 10));
+//        holder.mTextView.setMinHeight((200 + mKeys.get(position).length() * 10));
         holder.mTextView.setBackgroundColor(getBackgroundColor(position));
     }
 
@@ -104,7 +106,10 @@ public class SimpleStringAdapter extends RecyclerView.Adapter<SimpleStringAdapte
      * @param key
      */
     public void startActivity(String key){
-        Intent intent = new Intent(mContext,mDatas.get(key));
+        String skey = key.split(":")[1];
+        Log.d("lll", "startActivity: key-==="+key+"-skey==-"+skey+"---value==="+mDatas.get(key));
+
+        Intent intent = new Intent(mContext,mDatas.get(skey));
         mContext.startActivity(intent);
     }
 
@@ -114,13 +119,9 @@ public class SimpleStringAdapter extends RecyclerView.Adapter<SimpleStringAdapte
      * @return
      */
     private int getBackgroundColor(int position) {
-        switch (position % 4) {
-            case 0: return Color.BLACK;
-            case 1: return Color.RED;
-            case 2: return Color.DKGRAY;
-            case 3: return Color.BLUE;
-        }
-        return Color.TRANSPARENT;
+        Random random  = new Random();
+        int color=random.nextInt(255);
+        return Color.argb(1,random.nextInt(255)/255,random.nextInt(255)/255,random.nextInt(255)/255);
     }
 
 

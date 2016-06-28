@@ -13,10 +13,15 @@ import com.lll.learn.DrawerLayoutActivity;
 import com.lll.learn.GridLayoutManagerActivity;
 import com.lll.learn.LinearLayoutManagerActivity;
 import com.lll.learn.StaggeredGridLayoutManagerActivity;
+import com.lll.learn.base.BaseListStringActivity;
+import com.lll.learn.md.MDLearnActivity;
 import com.lll.learn.v4.DrawableCompatActivity;
 import com.lll.learn.v4.NestedScrollActivity;
 import com.tima.core.base.BaseActivity;
 import com.tima.core.learn.AnimatedRecyclerView;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Description: 闪屏页面
@@ -24,12 +29,17 @@ import com.tima.core.learn.AnimatedRecyclerView;
  * Created by lll on 2016/5/3.
  * CopyRight lll
  */
-public class FlashActivity extends BaseActivity {
+public class FlashActivity extends BaseListStringActivity {
+
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        startLogin();
+    public Map<String, Class> getDatas() {
+        Map<String,Class> map = new HashMap<>();
+        map.put("图片tint",DrawableCompatActivity.class);
+        map.put("状态栏", MDLearnActivity.class);
+
+        return map;
     }
 
     private void startLogin() {
@@ -50,17 +60,5 @@ public class FlashActivity extends BaseActivity {
         }, 1000);
     }
 
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        int mask = event.getActionMasked();
-        switch (mask) {
-            case MotionEvent.ACTION_POINTER_DOWN:
-                break;
-            case MotionEvent.ACTION_POINTER_UP:
-                break;
-            case MotionEvent.ACTION_DOWN:
-                break;
-        }
-        return super.onTouchEvent(event);
-    }
+
 }

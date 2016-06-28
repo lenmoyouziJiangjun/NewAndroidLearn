@@ -20,6 +20,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
@@ -39,6 +40,12 @@ public class SimpleStringAdapter extends RecyclerView.Adapter<SimpleStringAdapte
         public ViewHolder(TextView v) {
             super(v);
             mTextView = v;
+            mTextView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                }
+            });
         }
 
         @Override
