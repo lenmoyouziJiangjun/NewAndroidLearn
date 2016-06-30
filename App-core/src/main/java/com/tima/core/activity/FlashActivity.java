@@ -17,10 +17,12 @@ import com.lll.learn.base.BaseListStringActivity;
 import com.lll.learn.md.MDLearnActivity;
 import com.lll.learn.v4.DrawableCompatActivity;
 import com.lll.learn.v4.NestedScrollActivity;
+import com.lll.learn.v7.V7LearnActivity;
 import com.tima.core.base.BaseActivity;
 import com.tima.core.learn.AnimatedRecyclerView;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
@@ -35,9 +37,10 @@ public class FlashActivity extends BaseListStringActivity {
 
     @Override
     public Map<String, Class> getDatas() {
-        Map<String,Class> map = new HashMap<>();
+        Map<String,Class> map = new LinkedHashMap<>(10);
         map.put("图片tint",DrawableCompatActivity.class);
         map.put("状态栏", MDLearnActivity.class);
+        map.put("support v7 包学习", V7LearnActivity.class);
 
         return map;
     }

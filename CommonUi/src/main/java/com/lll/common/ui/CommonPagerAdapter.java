@@ -1,4 +1,4 @@
-package com.tima.common.ui;
+package com.lll.common.ui;
 
 import android.support.v4.view.PagerAdapter;
 import android.view.View;

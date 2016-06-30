@@ -7,7 +7,6 @@
 
     <!--4.4设置status bar透明-->
     <style name="AppTheme" parent="BaseTheme">
-
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">true</item>
     </style>

@@ -27,8 +27,10 @@
             android:name=".md.TestStatus2Activity"
             android:label="@string/title_activity_test_status2"
             android:theme="@style/AppTheme" />
-        <activity android:name=".md.ImageStatusActivity"
-            />
+        <activity android:name=".md.ImageStatusActivity" />
+        <activity android:name=".v7.ToolBarLearnActivity" />
+        <activity android:name=".v7.V7LearnActivity"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
