@@ -11,6 +11,7 @@
         <activity android:name=".LinearLayoutManagerActivity" />
         <activity android:name=".StaggeredGridLayoutManagerActivity" />
         <activity android:name=".GridLayoutManagerActivity" />
+        <activity android:name=".AnimatedRecyclerView" />
         <activity android:name=".v4.NestedScrollActivity" />
         <activity
             android:name=".v4.DrawableCompatActivity"
@@ -29,8 +30,15 @@
             android:theme="@style/AppTheme" />
         <activity android:name=".md.ImageStatusActivity" />
         <activity android:name=".v7.ToolBarLearnActivity" />
-        <activity android:name=".v7.V7LearnActivity"
-            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".v7.V7LearnActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".v7.GridLayoutActivity" />
+        <activity android:name=".md.DetailTemActivity" />
+        <activity android:name=".v7.ToolViewPagerActivity" />
+        <activity android:name=".recycleView.RecycleViewLearnActivity" />
+        <activity android:name=".recycleView.DragAndDropActivity" />
+        <activity android:name=".recycleView.SwipeToDismissActivity"></activity>
     </application>
 
 </manifest>

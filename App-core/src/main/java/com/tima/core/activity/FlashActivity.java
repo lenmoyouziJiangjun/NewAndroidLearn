@@ -15,6 +15,7 @@ import com.lll.learn.LinearLayoutManagerActivity;
 import com.lll.learn.StaggeredGridLayoutManagerActivity;
 import com.lll.learn.base.BaseListStringActivity;
 import com.lll.learn.md.MDLearnActivity;
+import com.lll.learn.recycleView.RecycleViewLearnActivity;
 import com.lll.learn.v4.DrawableCompatActivity;
 import com.lll.learn.v4.NestedScrollActivity;
 import com.lll.learn.v7.V7LearnActivity;
@@ -41,6 +42,7 @@ public class FlashActivity extends BaseListStringActivity {
         map.put("图片tint",DrawableCompatActivity.class);
         map.put("状态栏", MDLearnActivity.class);
         map.put("support v7 包学习", V7LearnActivity.class);
+        map.put("RecycleView的学习", RecycleViewLearnActivity.class);
 
         return map;
     }

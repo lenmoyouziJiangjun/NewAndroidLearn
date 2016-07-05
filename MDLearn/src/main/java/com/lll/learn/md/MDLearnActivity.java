@@ -18,6 +18,7 @@ public class MDLearnActivity extends BaseListStringActivity {
         datas.put("状态栏沉浸效果",StatylePicActivity.class);
         datas.put("状态栏显示",TestStatus2Activity.class);
         datas.put("状态栏延升",ImageStatusActivity.class);
+        datas.put("详情界面模板",DetailTemActivity.class);
         return datas;
     }
 

@@ -135,4 +135,19 @@
     <string name="action_bar_sort_size">By size</string>
     <string name="action_bar_settings">Settings</string>
 
+    <string name="lorem_ipsum">Sugar plum sugar plum gummies donut jelly powder. Icing muffin cheesecake liquorice wafer bonbon. Bonbon tootsie roll halvah. Lollipop macaroon bear claw chocolate cake. Chocolate bar gummi bears candy cheesecake icing oat cake. Cake chocolate cake liquorice pie. Donut halvah lollipop. Bear claw lollipop sweet roll cookie dragée dragée donut candy. Cheesecake liquorice marzipan dragée muffin chocolate dessert jujubes. Cupcake ice cream tootsie roll bonbon croissant gingerbread ice cream danish. Jelly beans donut jujubes sugar plum. Tootsie roll tiramisu chupa chups dragée cheesecake brownie chocolate bar chocolate bar icing. Apple pie cake carrot cake gingerbread candy canes</string>
+    <string name="article_detail_more_info">More Info</string>
+    <string name="swiping">swiping</string>
+
+    <string name="drag_up">up</string>
+    <string name="drag_down">down</string>
+    <string name="long_press_drag">long press drag</string>
+    <string name="drag">drag me</string>
+    <string name="swipe">swipe me</string>
+
+    <string name="swipe_start">start</string>
+    <string name="swipe_end">end</string>
+    <string name="pointer_swipe_enabled">pointer swipe</string>
+    <string name="custom_swipe_enabled">custom swipe</string>
+
 </resources>

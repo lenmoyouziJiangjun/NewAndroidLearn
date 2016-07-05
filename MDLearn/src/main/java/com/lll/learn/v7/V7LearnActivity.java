@@ -15,7 +15,8 @@ public class V7LearnActivity extends BaseListStringActivity {
     public Map<String, Class> getDatas() {
         Map<String, Class> maps = new LinkedHashMap<>(5);
         maps.put("ToolBar学习",ToolBarLearnActivity.class);
-
+        maps.put("ToolBar学习2",ToolViewPagerActivity.class);
+        maps.put("GridLayout学习",GridLayoutActivity.class);
         return maps;
     }
 }

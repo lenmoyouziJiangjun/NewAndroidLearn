@@ -8,4 +8,16 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="nav_header_vertical_spacing">16dp</dimen>
     <dimen name="nav_header_height">160dp</dimen>
+
+
+    <dimen name="list_item_article_thumbnail">48dp</dimen>
+    <dimen name="list_item_artile_vertical_margin">4dp</dimen>
+    <dimen name="list_item_article_space">8dp</dimen>
+
+    <dimen name="detail_backdrop_height">256dp</dimen>
+    <dimen name="card_margin">16dp</dimen>
+    <dimen name="regular_offset">16dp</dimen>
+
+    <dimen name="color_palette_size">60dp</dimen>
+    <dimen name="touch_item_min_height">30dp</dimen>
 </resources>
