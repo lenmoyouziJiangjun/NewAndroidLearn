@@ -1,6 +1,9 @@
 package com.lll.common.util;
 
+
 import android.util.Log;
+
+//import com.lll.common.util.BuildConfig;
 
 /**
  * Description: log工具类
@@ -10,7 +13,7 @@ import android.util.Log;
  */
 public class LogUtils {
 
-    public static boolean isDebug = true;
+    public static boolean isDebug = false;
     public static String TAG = "lll";
     public static String logSplitStr = "-----";
 

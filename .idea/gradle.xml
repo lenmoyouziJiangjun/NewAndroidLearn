@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/App-core" />
             <option value="$PROJECT_DIR$/App-http" />
             <option value="$PROJECT_DIR$/App-release" />
+            <option value="$PROJECT_DIR$/BitmapLoader" />
             <option value="$PROJECT_DIR$/CommonEncryption" />
             <option value="$PROJECT_DIR$/CommonHttp" />
             <option value="$PROJECT_DIR$/CommonRecyclerview" />
@@ -27,6 +28,7 @@
             <option value="$PROJECT_DIR$/App-core" />
             <option value="$PROJECT_DIR$/App-http" />
             <option value="$PROJECT_DIR$/App-release" />
+            <option value="$PROJECT_DIR$/BitmapLoader" />
             <option value="$PROJECT_DIR$/CommonEncryption" />
             <option value="$PROJECT_DIR$/CommonHttp" />
             <option value="$PROJECT_DIR$/CommonRecyclerview" />

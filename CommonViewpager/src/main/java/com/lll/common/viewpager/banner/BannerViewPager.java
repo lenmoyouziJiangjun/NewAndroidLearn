@@ -187,4 +187,12 @@ public class BannerViewPager extends ViewPager {
             return  false;
         }
     }
+
+    public BannerPagerAdapter getAdapter(){
+        return mAdapter;
+    }
+
+
+
+
 }
