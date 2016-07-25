@@ -696,7 +696,7 @@ public final class DiskLruCache implements Closeable {
     /**
      * Edits the values for an entry.
      */
-    private final class Editor {
+    public final class Editor {
         private final Entry entry;
         private boolean hasErrors;
 
