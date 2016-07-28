@@ -6,7 +6,7 @@ import com.tima.app.http.TimaHttpClient;
 import com.tima.app.http.domin.LoginRequest;
 import com.tima.app.http.response.BaseResponse;
 import com.tima.app.http.service.IBaseService;
-import com.lll.common.util.LogUtils;
+import com.lll.common.util.logger.LogUtils;
 import com.tima.core.mvp.task.ILoginTask;
 
 import java.util.Map;

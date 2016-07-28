@@ -43,6 +43,8 @@ public class FlashActivity extends BaseListStringActivity {
         map.put("状态栏", MDLearnActivity.class);
         map.put("support v7 包学习", V7LearnActivity.class);
         map.put("RecycleView的学习", RecycleViewLearnActivity.class);
+        map.put("图片加载", BitmapLoaderActivity.class);
+
 
         return map;
     }
@@ -61,6 +63,7 @@ public class FlashActivity extends BaseListStringActivity {
                 startActivity(intent);
 //                ListViewiew
 //                RecycleV
+
             }
         }, 1000);
     }
