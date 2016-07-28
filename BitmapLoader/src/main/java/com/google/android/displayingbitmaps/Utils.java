@@ -21,8 +21,6 @@ import android.os.Build;
 import android.os.Build.VERSION_CODES;
 import android.os.StrictMode;
 
-import com.example.android.displayingbitmaps.ui.ImageDetailActivity;
-import com.example.android.displayingbitmaps.ui.ImageGridActivity;
 
 /**
  * Class containing some static utility methods.
@@ -43,12 +41,12 @@ public class Utils {
                             .detectAll()
                             .penaltyLog();
 
-            if (Utils.hasHoneycomb()) {
-                threadPolicyBuilder.penaltyFlashScreen();
-                vmPolicyBuilder
-                        .setClassInstanceLimit(ImageGridActivity.class, 1)
-                        .setClassInstanceLimit(ImageDetailActivity.class, 1);
-            }
+//            if (Utils.hasHoneycomb()) {
+//                threadPolicyBuilder.penaltyFlashScreen();
+//                vmPolicyBuilder
+//                        .setClassInstanceLimit(ImageGridActivity.class, 1)
+//                        .setClassInstanceLimit(ImageDetailActivity.class, 1);
+//            }
             StrictMode.setThreadPolicy(threadPolicyBuilder.build());
             StrictMode.setVmPolicy(vmPolicyBuilder.build());
         }

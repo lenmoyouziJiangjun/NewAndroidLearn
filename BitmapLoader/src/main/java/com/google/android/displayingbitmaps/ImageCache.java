@@ -30,9 +30,10 @@ import android.os.StatFs;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.util.LruCache;
+import android.util.Log;
 
-import com.example.android.common.logger.Log;
-import com.example.android.displayingbitmaps.BuildConfig;
+
+import com.example.bitmaploader.BuildConfig;
 
 import java.io.File;
 import java.io.FileDescriptor;
@@ -131,9 +132,7 @@ public class ImageCache {
         //BEGIN_INCLUDE(init_memory_cache)
         // Set up memory cache
         if (mCacheParams.memoryCacheEnabled) {
-            if (BuildConfig.DEBUG) {
-                Log.d(TAG, "Memory cache created (size = " + mCacheParams.memCacheSize + ")");
-            }
+
 
             // If we're running on Honeycomb or newer, create a set of reusable bitmaps that can be
             // populated into the inBitmap field of BitmapFactory.Options. Note that the set is
@@ -212,9 +211,7 @@ public class ImageCache {
                         try {
                             mDiskLruCache = DiskLruCache.open(
                                     diskCacheDir, 1, 1, mCacheParams.diskCacheSize);
-                            if (BuildConfig.DEBUG) {
-                                Log.d(TAG, "Disk cache initialized");
-                            }
+
                         } catch (final IOException e) {
                             mCacheParams.diskCacheDir = null;
                             Log.e(TAG, "initDiskCache - " + e);

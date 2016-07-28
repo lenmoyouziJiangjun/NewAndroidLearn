@@ -21,11 +21,11 @@ import android.graphics.Bitmap;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
+import android.util.Log;
 import android.widget.Toast;
 
-import com.example.android.common.logger.Log;
-import com.example.android.displayingbitmaps.BuildConfig;
-import com.example.android.displayingbitmaps.R;
+import com.example.bitmaploader.BuildConfig;
+import com.example.bitmaploader.R;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -173,7 +173,7 @@ public class ImageFetcher extends ImageResizer {
                 (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         final NetworkInfo networkInfo = cm.getActiveNetworkInfo();
         if (networkInfo == null || !networkInfo.isConnectedOrConnecting()) {
-            Toast.makeText(context, R.string.no_network_connection_toast, Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "没有网络", Toast.LENGTH_LONG).show();
             Log.e(TAG, "checkConnection - no connection found");
         }
     }
