@@ -205,10 +205,11 @@ public class ImageCache {
                 File diskCacheDir = mCacheParams.diskCacheDir;
                 if (mCacheParams.diskCacheEnabled && diskCacheDir != null) {
                     if (!diskCacheDir.exists()) {
-                        diskCacheDir.mkdirs();
+                        diskCacheDir.mkdirs();//创建缓存文件目录
                     }
                     if (getUsableSpace(diskCacheDir) > mCacheParams.diskCacheSize) {
                         try {
+                            //创建DiskLruCache对象
                             mDiskLruCache = DiskLruCache.open(
                                     diskCacheDir, 1, 1, mCacheParams.diskCacheSize);
 

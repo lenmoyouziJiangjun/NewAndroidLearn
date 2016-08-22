@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 
+import com.lll.bitmaploader.cache.ImageCache;
+
 /**
  * Description:
  * Version:
@@ -86,5 +88,8 @@ public class BaseApplication extends MultiDexApplication {
         });
     }
 
-
+    @Override
+    public void onLowMemory() {
+        super.onLowMemory();
+    }
 }

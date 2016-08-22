@@ -23,7 +23,12 @@
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.BitmapLoaderActivity"/>
 
-        <activity android:name=".activity.viewpager.ViewPagerLearnActivity"></activity>
+        <activity android:name=".activity.viewpager.ViewPagerLearnActivity"/>
+
+        <activity android:name=".activity.PublicWebViewActivity"
+            android:process=":web"
+            android:exported="true"
+            />
     </application>
 
 </manifest>

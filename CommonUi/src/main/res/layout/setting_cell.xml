@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="150dip" />
+
+    <TextView
+        android:id="@+id/tv_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right" />
+
+    <!--显示下一页-->
+    <ViewStub
+        android:id="@+id/vs_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </ViewStub>
+
+    <!--switch开关-->
+    <ViewStub
+        android:id="@+id/vs_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+       <Switch
+           android:id="@+id/st"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+    </ViewStub>
+
+    <!--进度控制-->
+    <ViewStub
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </ViewStub>
+
+</LinearLayout>
