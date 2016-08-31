@@ -6,6 +6,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.os.Build;
 import android.support.v4.widget.DrawerLayout;
+import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
@@ -393,6 +394,24 @@ public class StatusBarUtil {
         // 获得状态栏高度
         int resourceId = context.getResources().getIdentifier("status_bar_height", "dimen", "android");
         return context.getResources().getDimensionPixelSize(resourceId);
+    }
+
+    /**
+     *  在activity的OnWindowFocusChange方法中实现状态栏显示与隐藏。实现游戏下拉出现状态栏的功能
+     * @param focusChange
+     * @param ctx
+     */
+    public static void setStatusBarOnWindowFocusChange(boolean focusChange,Activity ctx){
+        if (focusChange && Build.VERSION.SDK_INT >= 19) {
+            View decorView = ctx.getWindow().getDecorView();
+            decorView.setSystemUiVisibility(
+                    View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                            | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                            | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                            | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                            | View.SYSTEM_UI_FLAG_FULLSCREEN
+                            | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+        }
     }
 
 }

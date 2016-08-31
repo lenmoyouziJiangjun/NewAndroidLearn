@@ -1,1 +1,1 @@
-include ':App-release', ':CommonUi', ':CommonHttp', ':App-core', ':App-http', ':CommonUtil', ':CommonEncryption', ':MDLearn', ':CommonViewpager', ':CommonRecyclerview', ':BitmapLoader'
+include ':App-release',':CommonHttp', ':CommonUi', ':App-core', ':App-http', ':CommonUtil', ':CommonEncryption', ':MDLearn', ':CommonViewpager', ':BitmapLoader', ':CommonAnimation'

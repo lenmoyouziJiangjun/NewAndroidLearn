@@ -6,9 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/App-http/App-http.iml" filepath="$PROJECT_DIR$/App-http/App-http.iml" />
       <module fileurl="file://$PROJECT_DIR$/App-release/App-release.iml" filepath="$PROJECT_DIR$/App-release/App-release.iml" />
       <module fileurl="file://$PROJECT_DIR$/BitmapLoader/BitmapLoader.iml" filepath="$PROJECT_DIR$/BitmapLoader/BitmapLoader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonAnimation/CommonAnimation.iml" filepath="$PROJECT_DIR$/CommonAnimation/CommonAnimation.iml" />
       <module fileurl="file://$PROJECT_DIR$/CommonEncryption/CommonEncryption.iml" filepath="$PROJECT_DIR$/CommonEncryption/CommonEncryption.iml" />
       <module fileurl="file://$PROJECT_DIR$/CommonHttp/CommonHttp.iml" filepath="$PROJECT_DIR$/CommonHttp/CommonHttp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CommonRecyclerview/CommonRecyclerview.iml" filepath="$PROJECT_DIR$/CommonRecyclerview/CommonRecyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/CommonUi/CommonUi.iml" filepath="$PROJECT_DIR$/CommonUi/CommonUi.iml" />
       <module fileurl="file://$PROJECT_DIR$/CommonUtil/CommonUtil.iml" filepath="$PROJECT_DIR$/CommonUtil/CommonUtil.iml" />
       <module fileurl="file://$PROJECT_DIR$/CommonViewpager/CommonViewpager.iml" filepath="$PROJECT_DIR$/CommonViewpager/CommonViewpager.iml" />

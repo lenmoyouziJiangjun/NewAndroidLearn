@@ -12,21 +12,30 @@ import android.widget.TextView;
 
 //import com.tima.common.util.CommonUtils;
 import com.tima.core.R;
+import com.tima.core.mvp.BasePresenter;
 import com.tima.core.mvp.IBaseTask;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class BaseFragment extends Fragment {
+public class BaseFragment<T extends BasePresenter> extends Fragment {
 
     BaseActivity mBaseActivity;
 
+    private T mPresenter;
+
+
+    public T getPresenter(){
+        return mPresenter;
+    }
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
         mBaseActivity = (BaseActivity) context;
     }
+
+
 
 
     @Override

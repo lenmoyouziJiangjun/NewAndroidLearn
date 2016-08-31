@@ -11,12 +11,20 @@ import com.tima.core.base.BaseActivity;
 import com.tima.core.base.BaseFragment;
 
 /**
- * Description:
+ * Description:  消息中心的Fragment
  * Version:
  * Created by lll on 2016/5/3.
  * CopyRight lll
  */
 public class MessageFragment extends BaseFragment {
+
+    public static MessageFragment newInstance() {
+        MessageFragment fragment = new MessageFragment();
+        Bundle args = new Bundle();
+
+        fragment.setArguments(args);
+        return fragment;
+    }
 
     @Nullable
     @Override

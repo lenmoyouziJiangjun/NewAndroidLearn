@@ -16,6 +16,7 @@ public class LogUtils {
     public static boolean isDebug = false;
     public static String TAG = "lll";
     public static String logSplitStr = "-----";
+    private static final boolean WRITE_TO_FILE=false;
 
     /**
      * 获取log前缀
@@ -126,6 +127,13 @@ public class LogUtils {
     }
 
 
-    private static void writeLog2file(){}
+    /**
+     * 将log写入本地文件
+     */
+    private static void writeLog2file(){
+        if(WRITE_TO_FILE){//
+
+        }
+    }
 
 }

@@ -44,7 +44,7 @@ public class FlashActivity extends BaseListStringActivity {
         map.put("support v7 包学习", V7LearnActivity.class);
         map.put("RecycleView的学习", RecycleViewLearnActivity.class);
         map.put("图片加载", BitmapLoaderActivity.class);
-
+        map.put("进入主界面", MainActivity.class);
 
         return map;
     }
