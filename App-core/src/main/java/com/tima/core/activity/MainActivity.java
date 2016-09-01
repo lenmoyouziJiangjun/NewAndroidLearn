@@ -66,12 +66,14 @@ public class MainActivity extends BaseActivity {
                 mCurrentFragment = PersonFragment.newInstance();
                 break;
         }
+        getSupportFragmentManager().beginTransaction().add(R.id.fl_main_container,mCurrentFragment).commit();
         getSupportFragmentManager().beginTransaction().show(mCurrentFragment).commit();
     }
 
 
     @Override
     public void onBackPressed() {
+        super.onBackPressed();
         //再按一次退出应用
     }
 }

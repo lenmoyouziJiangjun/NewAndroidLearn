@@ -9,11 +9,7 @@ import android.os.Bundle;
 
 public class BaseActivity extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-//        ButterKnife.inject(this);
-    }
+
 
     @Override
     public void startActivity(Intent intent) {
