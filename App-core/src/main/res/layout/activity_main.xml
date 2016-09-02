@@ -22,7 +22,6 @@
         android:id="@+id/rg_bottom"
         android:layout_width="match_parent"
         android:layout_height="48dip"
-        android:background=""
         android:orientation="horizontal"
         android:gravity="center_vertical">
 

@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-
+apply plugin: 'com.antfortune.freeline'
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
@@ -11,6 +11,9 @@ android {
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
+    }
+    freeline{
+        hack true
     }
     buildTypes {
         release {
@@ -26,5 +29,6 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    compile 'com.antfortune.freeline:runtime:0.5.5'
     compile project(':App-core')
 }
