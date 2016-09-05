@@ -3,28 +3,15 @@ package com.tima.core.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.StaggeredGridLayoutManager;
-import android.view.MotionEvent;
-import android.widget.ListView;
+import android.support.annotation.Nullable;
+import android.view.Window;
+import android.view.WindowManager;
 
-import com.lll.learn.AsyncListUtilActivity;
-import com.lll.learn.DrawerLayoutActivity;
-import com.lll.learn.GridLayoutManagerActivity;
-import com.lll.learn.LinearLayoutManagerActivity;
-import com.lll.learn.StaggeredGridLayoutManagerActivity;
-import com.lll.learn.base.BaseListStringActivity;
-import com.lll.learn.md.MDLearnActivity;
-import com.lll.learn.recycleView.RecycleViewLearnActivity;
 import com.lll.learn.v4.DrawableCompatActivity;
-import com.lll.learn.v4.NestedScrollActivity;
-import com.lll.learn.v7.V7LearnActivity;
+import com.tima.core.R;
 import com.tima.core.base.BaseActivity;
-import com.tima.core.learn.AnimatedRecyclerView;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
+
 
 /**
  * Description: 闪屏页面
@@ -32,22 +19,49 @@ import java.util.Map;
  * Created by lll on 2016/5/3.
  * CopyRight lll
  */
-public class FlashActivity extends BaseListStringActivity {
-
+public class FlashActivity extends BaseActivity {
 
 
     @Override
-    public Map<String, Class> getDatas() {
-        Map<String,Class> map = new LinkedHashMap<>(10);
-        map.put("图片tint",DrawableCompatActivity.class);
-        map.put("状态栏", MDLearnActivity.class);
-        map.put("support v7 包学习", V7LearnActivity.class);
-        map.put("RecycleView的学习", RecycleViewLearnActivity.class);
-        map.put("图片加载", BitmapLoaderActivity.class);
-        map.put("进入主界面", MainActivity.class);
-
-        return map;
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setWindowFlag();
+        setContentView(R.layout.activity_flash_core);
+        checkNewVersion();
     }
+
+    /**
+     * 细节1:闪屏界面一般是全屏界面
+     */
+    private void setWindowFlag(){
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setBackgroundDrawable(getResources().getDrawable(R.drawable.transparent_real));//
+    }
+
+    /**
+     * 检查新版本
+     */
+    private void checkNewVersion(){
+       if(true){//没有更新
+           goBannerActivity();
+       }
+    }
+
+    //进入广告(或新手引导界面)界面
+    private void goBannerActivity(){
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(FlashActivity.this,BannerActivity.class);
+                startActivity(intent);
+                finish();//手动finish
+            }
+        },3000);
+    }
+
+
 
     private void startLogin() {
         new Handler().postDelayed(new Runnable() {

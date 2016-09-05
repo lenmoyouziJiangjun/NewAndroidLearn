@@ -22,6 +22,7 @@
         <activity android:name=".learn.AnimatedRecyclerView" />
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.BitmapLoaderActivity"/>
+        <activity android:name=".activity.BannerActivity"/>
 
         <activity android:name=".activity.viewpager.ViewPagerLearnActivity"/>
 

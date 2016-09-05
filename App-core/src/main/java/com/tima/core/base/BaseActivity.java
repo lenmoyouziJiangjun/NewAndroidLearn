@@ -2,8 +2,11 @@ package com.tima.core.base;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.lll.common.util.SpUtils;
 
 //import butterknife.ButterKnife;
 
@@ -23,6 +26,11 @@ public class BaseActivity extends AppCompatActivity {
         super.startActivityForResult(intent, requestCode);
 //        overridePendingTransition(R.anim.anim_in,R.anim.anim_out);
     }
+
+    public SpUtils getSpUtils(){
+        return SpUtils.getInstance(this);
+    }
+
 
     /**
      * 显示加载进度框

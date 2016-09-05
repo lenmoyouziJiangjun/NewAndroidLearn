@@ -202,4 +202,10 @@
     <string name="appcompat_vector_disabled">AnimatedVectorDrawableCompat does not work on devices running API v10 or below</string>
     <string name="appcompat_vector_title">AppCompat/Integrations/AnimatedVectorDrawable</string>
 
+
+    <!--定义一个颜色-->
+    <drawable name="transparent_real">#00000000</drawable>
+
+
+
 </resources>

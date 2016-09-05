@@ -24,7 +24,7 @@ public class BaseApplication extends MultiDexApplication {
     public void onCreate() {
 //        MultiDex.install(this);
         super.onCreate();
-        testViewTree();
+//        testViewTree();
     }
 
     /**

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主要定义Application,activity,dialog的公共样式-->
+    <style name="AppThemeDark" parent="android:Theme" />
+
+    <style name="AppThemeDark.FullScreen" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+
+    </style>
+
+</resources>

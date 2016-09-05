@@ -17,10 +17,7 @@
 
 <resources>
 
-    <style name="AppThemeDark" parent="android:Theme" />
-
-    <style name="AppThemeDark.FullScreen" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
-
+    <!--里面定义View控件的style-->
     <style name="PhotoGridLayout">
         <item name="android:drawSelectorOnTop">true</item>
         <item name="android:listSelector">@drawable/photogrid_list_selector</item>
