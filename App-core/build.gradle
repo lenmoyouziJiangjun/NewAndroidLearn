@@ -29,6 +29,7 @@ dependencies {
     compile project(':CommonUi')
     compile project(':CommonUtil')
     compile project(':MDLearn')
+    compile project(':CommonViewpager')
     libraries.each { lib ->
         compile(lib.value) {
             transitive = true

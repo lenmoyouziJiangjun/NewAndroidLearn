@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.widget.FrameLayout;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.tima.core.R;
@@ -41,6 +42,7 @@ public class MainActivity extends BaseActivity {
                 switchFragment(checkedId);
             }
         });
+        ((RadioButton)findViewById(R.id.rb_msg)).setChecked(true);
     }
 
     /**
@@ -49,25 +51,18 @@ public class MainActivity extends BaseActivity {
      * @param id
      */
     private void switchFragment(int id) {
-        if (mCurrentFragment != null) {
-            getSupportFragmentManager().beginTransaction().hide(mCurrentFragment).commit();
+        if(id == R.id.rb_msg){
+            mCurrentFragment = MessageFragment.newInstance();
+        }else if(id == R.id.rb_book){
+            mCurrentFragment = PersonFragment.newInstance();
+        }else if(id == R.id.rb_person){
+            mCurrentFragment = PersonFragment.newInstance();
+        }else if(id == R.id.rb_send){
+            mCurrentFragment = PersonFragment.newInstance();
         }
-        switch (id) {
-            case 0:
-                mCurrentFragment = MessageFragment.newInstance();
-                break;
-            case 1:
-                mCurrentFragment = PersonFragment.newInstance();
-                break;
-            case 2:
-                mCurrentFragment = PersonFragment.newInstance();
-                break;
-            case 3:
-                mCurrentFragment = PersonFragment.newInstance();
-                break;
-        }
-        getSupportFragmentManager().beginTransaction().add(R.id.fl_main_container,mCurrentFragment).commit();
-        getSupportFragmentManager().beginTransaction().show(mCurrentFragment).commit();
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.fl_main_container,mCurrentFragment).addToBackStack(null).commitAllowingStateLoss();
+//        getSupportFragmentManager().beginTransaction().show(mCurrentFragment).commit();
     }
 
 

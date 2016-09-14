@@ -19,5 +19,8 @@
 
     <color name="grid_state_pressed">#1Affffff</color>
     <color name="grid_state_focused">#80000000</color>
+    <color name="pager_tab_line">#df1f51</color>
+    <color name="pager_tab_title">#d9d9d9</color>
+    <color name="pager_tab_background">#6A7682</color>
 
 </resources>
