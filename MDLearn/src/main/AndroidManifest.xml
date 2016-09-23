@@ -38,7 +38,12 @@
         <activity android:name=".v7.ToolViewPagerActivity" />
         <activity android:name=".recycleView.RecycleViewLearnActivity" />
         <activity android:name=".recycleView.DragAndDropActivity" />
-        <activity android:name=".recycleView.SwipeToDismissActivity"></activity>
+        <activity android:name=".recycleView.SwipeToDismissActivity" />
+        <activity android:name=".v4.V4LearnActivity" />
+        <activity
+            android:name=".v4.MainStyle2Activity"
+            android:label="@string/title_activity_main_style2"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

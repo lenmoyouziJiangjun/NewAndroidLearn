@@ -149,5 +149,6 @@
     <string name="swipe_end">end</string>
     <string name="pointer_swipe_enabled">pointer swipe</string>
     <string name="custom_swipe_enabled">custom swipe</string>
+    <string name="title_activity_main_style2">MainStyle2Activity</string>
 
 </resources>
