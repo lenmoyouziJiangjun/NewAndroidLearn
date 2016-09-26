@@ -51,7 +51,7 @@ public class MusicVisualizer extends View {
         canvas.drawRect(getDimensionInPixel(0),getHeight() - (20 + mRandom.nextInt((int) (getHeight() / 1.5f) - 19)), getDimensionInPixel(7), getHeight(),mPaint);
         mPaint.setColor(Color.RED);
         canvas.drawRect(getDimensionInPixel(10), getHeight() - (20 + mRandom.nextInt((int) (getHeight() / 1.5f) - 19)), getDimensionInPixel(17), getHeight(), mPaint);
-        mPaint.setColor(Color.YELLOW);
+        mPaint.setColor(Color.BLACK);
         canvas.drawRect(getDimensionInPixel(20), getHeight() - (20 + mRandom.nextInt((int) (getHeight() / 1.5f) - 19)), getDimensionInPixel(27), getHeight(), mPaint);
     }
 

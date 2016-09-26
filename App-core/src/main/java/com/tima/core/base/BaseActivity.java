@@ -6,11 +6,12 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.afollestad.appthemeengine.ATEActivity;
 import com.lll.common.util.SpUtils;
 
 //import butterknife.ButterKnife;
 
-public class BaseActivity extends AppCompatActivity {
+public class BaseActivity extends ATEActivity {
 
 
 

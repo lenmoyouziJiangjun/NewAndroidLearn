@@ -1,10 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--主要定义Application,activity,dialog的公共样式-->
-    <style name="AppThemeDark" parent="android:Theme" />
 
-    <style name="AppThemeDark.FullScreen" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+
+    <attr name="cardStyle" format="reference" />
+    <attr name="accentColor" format="reference" />
+    <attr name="iconColor" format="reference" />
+    <attr name="windowBackground" format="reference" />
+    <attr name="progressBackgroundColor" format="reference" />
+    <attr name="progressDrawable" format="reference" />
+    <attr name="progressDrawableWithBackground" format="reference" />
+    <attr name="stateSelector" format="reference" />
+
+
+    <style name="ThemeBaseLight" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="cardStyle">@style/CardViewStyle.Light</item>
+        <item name="accentColor">@color/colorAccent</item>
+        <item name="iconColor">@android:color/black</item>
+        <item name="windowBackground">@color/window_background</item>
+        <item name="stateSelector">@color/state_selector_light</item>
+        <item name="progressBackgroundColor">@color/progressBackgroundColorLight</item>
+        <item name="progressDrawable">@drawable/progress_drawable</item>
+        <item name="progressDrawableWithBackground">@drawable/progress_drawable_withbackground
+        </item>
+        <item name="ate_key">light_theme</item>
 
     </style>
+
+    <style name="ThemeBaseDark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDarkTheme</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkDarkTheme</item>
+        <item name="colorAccent">@color/colorAccentDarkTheme</item>
+        <item name="android:windowBackground">@color/window_background_dark</item>
+        <item name="cardStyle">@style/CardViewStyle.Dark</item>
+        <item name="accentColor">@color/colorAccentDarkTheme</item>
+        <item name="iconColor">@android:color/white</item>
+        <item name="windowBackground">@color/window_background_dark</item>
+        <item name="stateSelector">@color/state_selector_dark</item>
+        <item name="progressBackgroundColor">@color/progressBackgroundColorDark</item>
+        <item name="progressDrawable">@drawable/progress_drawable_dark</item>
+        <item name="progressDrawableWithBackground">
+            @drawable/progress_drawable_withbackground_dark
+        </item>
+        <item name="ate_key">dark_theme</item>
+
+    </style>
+
+    <style name="ThemeBaseBlack" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryBlack</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkBlack</item>
+        <item name="colorAccent">@color/colorAccentBlack</item>
+        <item name="android:windowBackground">@color/window_background_black</item>
+        <item name="cardStyle">@style/CardViewStyle.Black</item>
+        <item name="accentColor">@color/colorAccentBlack</item>
+        <item name="iconColor">@android:color/white</item>
+        <item name="windowBackground">@color/window_background_black</item>
+        <item name="stateSelector">@color/state_selector_black</item>
+        <item name="progressBackgroundColor">@color/progressBackgroundColorDark</item>
+        <item name="progressDrawable">@drawable/progress_drawable_black</item>
+        <item name="progressDrawableWithBackground">
+            @drawable/progress_drawable_withbackground_black
+        </item>
+    </style>
+
+
+    <style name="AppThemeLight" parent="ThemeBaseLight"/>
+
+    <style name="AppThemeNormalLight" parent="ThemeBaseLight"/>
+
+    <style name="AppTheme.FullScreen.Light" parent="ThemeBaseLight"/>
+
+    <style name="AppThemeDark" parent="ThemeBaseDark"/>
+
+
+    <style name="AppThemeNormalDark" parent="ThemeBaseDark"/>
+
+
+    <style name="AppTheme.FullScreen.Dark" parent="ThemeBaseDark"/>
+
+
+
+    <style name="AppThemeBlack" parent="ThemeBaseBlack"/>
+
+    <style name="AppThemeNormalBlack" parent="ThemeBaseBlack"/>
+
+
+    <style name="AppTheme.FullScreen.Black" parent="ThemeBaseBlack"/>
+
 
 </resources>

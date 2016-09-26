@@ -10,7 +10,9 @@ import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 
+import com.afollestad.appthemeengine.ATE;
 import com.lll.bitmaploader.cache.ImageCache;
+import com.tima.core.R;
 
 /**
  * Description:
@@ -25,6 +27,7 @@ public class BaseApplication extends MultiDexApplication {
 //        MultiDex.install(this);
         super.onCreate();
 //        testViewTree();
+        setApplicationStyle();
     }
 
     /**
@@ -91,5 +94,47 @@ public class BaseApplication extends MultiDexApplication {
     @Override
     public void onLowMemory() {
         super.onLowMemory();
+    }
+
+
+    private void setApplicationStyle(){
+        if (!ATE.config(this, "light_theme").isConfigured()) {
+            ATE.config(this, "light_theme")
+                    .activityTheme(R.style.AppThemeLight)
+                    .primaryColorRes(R.color.colorPrimaryLightDefault)
+                    .accentColorRes(R.color.colorAccentLightDefault)
+                    .coloredNavigationBar(false)
+                    .usingMaterialDialogs(true)
+                    .commit();
+        }
+        if (!ATE.config(this, "dark_theme").isConfigured()) {
+            ATE.config(this, "dark_theme")
+                    .activityTheme(R.style.AppThemeDark)
+                    .primaryColorRes(R.color.colorPrimaryDarkDefault)
+                    .accentColorRes(R.color.colorAccentDarkDefault)
+                    .coloredNavigationBar(false)
+                    .usingMaterialDialogs(true)
+                    .commit();
+        }
+        if (!ATE.config(this, "light_theme_notoolbar").isConfigured()) {
+            ATE.config(this, "light_theme_notoolbar")
+                    .activityTheme(R.style.AppThemeLight)
+                    .coloredActionBar(false)
+                    .primaryColorRes(R.color.colorPrimaryLightDefault)
+                    .accentColorRes(R.color.colorAccentLightDefault)
+                    .coloredNavigationBar(false)
+                    .usingMaterialDialogs(true)
+                    .commit();
+        }
+        if (!ATE.config(this, "dark_theme_notoolbar").isConfigured()) {
+            ATE.config(this, "dark_theme_notoolbar")
+                    .activityTheme(R .style.AppThemeDark)
+                    .coloredActionBar(false)
+                    .primaryColorRes(R.color.colorPrimaryDarkDefault)
+                    .accentColorRes(R.color.colorAccentDarkDefault)
+                    .coloredNavigationBar(true)
+                    .usingMaterialDialogs(true)
+                    .commit();
+        }
     }
 }
