@@ -150,5 +150,6 @@
     <string name="pointer_swipe_enabled">pointer swipe</string>
     <string name="custom_swipe_enabled">custom swipe</string>
     <string name="title_activity_main_style2">MainStyle2Activity</string>
+    <string name="title_activity_drag_layout">DragLayoutActivity</string>
 
 </resources>

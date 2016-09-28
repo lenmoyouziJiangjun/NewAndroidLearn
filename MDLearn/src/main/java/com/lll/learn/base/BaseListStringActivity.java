@@ -37,6 +37,7 @@ public abstract class BaseListStringActivity extends AppCompatActivity {
 
         mRecyclerView.setLayoutManager(manager);
         mDatas = getDatas();
+        mRecyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL_LIST));
         mRecyclerView.setAdapter(new SimpleStringAdapter(mDatas,this){
             @Override
             public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {

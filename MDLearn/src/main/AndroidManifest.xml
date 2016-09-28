@@ -43,6 +43,10 @@
         <activity
             android:name=".v4.MainStyle2Activity"
             android:label="@string/title_activity_main_style2"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v4.DragLayoutActivity"
+            android:label="@string/title_activity_drag_layout"
             android:theme="@style/AppTheme"></activity>
     </application>
 

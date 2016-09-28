@@ -61,7 +61,7 @@ public class MainActivity extends BaseActivity {
             mCurrentFragment = PersonFragment.newInstance();
         }
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fl_main_container,mCurrentFragment).addToBackStack(null).commitAllowingStateLoss();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fl_main_container,mCurrentFragment).commitAllowingStateLoss();
 //        getSupportFragmentManager().beginTransaction().show(mCurrentFragment).commit();
     }
 
