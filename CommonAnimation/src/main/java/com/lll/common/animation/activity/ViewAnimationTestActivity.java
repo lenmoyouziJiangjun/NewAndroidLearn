@@ -26,7 +26,7 @@ import java.util.List;
  * Created by lll on 2016/2/2.
  * CopyRight lll
  */
-public class ViewAnimationTestActivity extends AnimationTestActivity {
+public class ViewAnimationTestActivity extends AnimationTestBaseActivity {
     @Override
     public List<String> getDatas() {
         List<String> datas = new ArrayList<>();

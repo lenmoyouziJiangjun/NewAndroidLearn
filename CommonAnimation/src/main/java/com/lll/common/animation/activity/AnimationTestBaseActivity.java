@@ -1,30 +1,38 @@
 package com.lll.common.animation.activity;
 
+
+
 import android.content.Context;
-import android.content.Intent;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
+import android.os.Bundle;
 import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 
 import com.lll.common.animation.R;
 
 import java.util.List;
 import java.util.Random;
 
-public abstract class AnimationTestActivity extends AppCompatActivity {
+
+/**
+ * Version 1.0
+ * Created by lll on 16/10/13.
+ * Description
+ * copyright generalray4239@gmail.com
+ */
+
+public abstract class AnimationTestBaseActivity extends AppCompatActivity {
 
     public ImageView mTestImageView;
 
@@ -35,18 +43,19 @@ public abstract class AnimationTestActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_animation_test);
+        setContentView(R.layout.activity_property_animation_test);
         initView();
     }
 
     private void initView() {
         mTestImageView = (ImageView) findViewById(R.id.img_test);
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        mDatas = getDatas();
+
         LinearLayoutManager manager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         mRecyclerView.setLayoutManager(manager);
         mRecyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST));
         mRecyclerView.setAdapter(new SimpleStringAdapter(mDatas, this));
-        mRecyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST));
     }
 
     /**
@@ -242,3 +251,4 @@ public abstract class AnimationTestActivity extends AppCompatActivity {
 
 
 }
+

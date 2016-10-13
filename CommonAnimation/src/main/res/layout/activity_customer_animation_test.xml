@@ -8,12 +8,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+
     app:context="com.lll.common.animation.activity.CustomerAnimationTestActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:background="#e2e3e4e5"
+        android:orientation="horizontal"
+        android:gravity="center">
 
         <com.lll.common.animation.timely.TimelyView
             android:id="@+id/timelyView11"
