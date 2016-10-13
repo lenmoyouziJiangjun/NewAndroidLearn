@@ -205,7 +205,7 @@
 
     <!--定义一个颜色-->
     <drawable name="transparent_real">#00000000</drawable>
-
+    <string name="title_activity_animation_test">AnimationTestActivity</string>
 
 
 </resources>

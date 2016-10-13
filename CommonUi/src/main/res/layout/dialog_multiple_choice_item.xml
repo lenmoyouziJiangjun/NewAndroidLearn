@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView android:id="@android:id/text1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="44dip"
+    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+    android:gravity="center_vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="5dp"
+    android:textColor="?android:attr/textColorPrimary"
+    android:textSize="14sp"
+    tools:text="编辑"/>

@@ -1,4 +1,4 @@
-package com.lll.common.ui;
+package com.lll.common.ui.dialog;
 
 /**
  * Description: 加载进度框

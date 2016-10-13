@@ -25,11 +25,13 @@
         <activity android:name=".activity.BannerActivity" />
         <activity android:name=".activity.ViewDemoActivity" />
         <activity android:name=".activity.viewpager.ViewPagerLearnActivity" />
-
         <activity
             android:name=".activity.PublicWebViewActivity"
             android:exported="true"
             android:process=":web" />
+        <activity
+            android:name=".activity.test.AnimationTestActivity"
+            android:label="@string/title_activity_animation_test"></activity>
     </application>
 
 </manifest>

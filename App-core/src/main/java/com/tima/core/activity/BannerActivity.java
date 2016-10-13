@@ -6,6 +6,7 @@ import com.lll.learn.recycleView.RecycleViewLearnActivity;
 import com.lll.learn.v4.DrawableCompatActivity;
 import com.lll.learn.v4.V4LearnActivity;
 import com.lll.learn.v7.V7LearnActivity;
+import com.tima.core.activity.test.AnimationTestActivity;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -27,6 +28,7 @@ public class BannerActivity extends BaseListStringActivity {
         map.put("图片加载", BitmapLoaderActivity.class);
         map.put("进入主界面", MainActivity.class);
         map.put("View效果合集", ViewDemoActivity.class);
+        map.put("动画效果",AnimationTestActivity.class);
 
         return map;
     }
