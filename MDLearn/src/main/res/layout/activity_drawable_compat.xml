@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:gravity="center_horizontal"
-              android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
@@ -17,28 +17,150 @@
         android:id="@+id/image"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:clickable="true"/>
+        android:clickable="true" />
 
     <RadioGroup
         android:id="@+id/drawable_compat_options"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <RadioButton android:id="@+id/drawable_compat_no_tint"
-                     android:layout_width="wrap_content"
-                     android:layout_height="wrap_content"
-                     android:text="@string/drawable_compat_no_tint"/>
+        <RadioButton
+            android:id="@+id/drawable_compat_no_tint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/drawable_compat_no_tint" />
 
-        <RadioButton android:id="@+id/drawable_compat_color"
-                     android:layout_width="wrap_content"
-                     android:layout_height="wrap_content"
-                     android:text="@string/drawable_compat_color_tint"/>
+        <RadioButton
+            android:id="@+id/drawable_compat_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/drawable_compat_color_tint" />
 
-        <RadioButton android:id="@+id/drawable_compat_state_list"
-                     android:layout_width="wrap_content"
-                     android:layout_height="wrap_content"
-                     android:text="@string/drawable_compat_color_list_tint"/>
+        <RadioButton
+            android:id="@+id/drawable_compat_state_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/drawable_compat_color_list_tint" />
 
     </RadioGroup>
 
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/drawable_compat_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/drawable_mode_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode.CLEAR" />
+
+            <RadioButton
+                android:id="@+id/drawable_mode_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode.SRC" />
+
+            <RadioButton
+                android:id="@+id/drawable_mode_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode.DST" />
+
+            <RadioButton
+                android:id="@+id/drawable_mode_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode.SRC_OVER" />
+
+            <RadioButton
+                android:id="@+id/drawable_mode_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode.DST_OVER" />
+
+            <RadioButton
+                android:id="@+id/drawable_mode_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode.SRC_IN" />
+
+            <RadioButton
+                android:id="@+id/drawable_mode_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode.DST_IN" />
+
+            <RadioButton
+                android:id="@+id/drawable_mode_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode.SRC_OUT" />
+
+            <RadioButton
+                android:id="@+id/drawable_mode_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode.DST_OUT" />
+
+            <RadioButton
+                android:id="@+id/drawable_mode_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode.SRC_ATOP" />
+
+            <RadioButton
+                android:id="@+id/drawable_mode_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode.DST_ATOP" />
+
+            <RadioButton
+                android:id="@+id/drawable_mode_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode.XOR" />
+
+            <RadioButton
+                android:id="@+id/drawable_mode_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode.DARKEN" />
+
+            <RadioButton
+                android:id="@+id/drawable_mode_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode.LIGHTEN" />
+
+            <RadioButton
+                android:id="@+id/drawable_mode_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode.MULTIPLY" />
+
+            <RadioButton
+                android:id="@+id/drawable_mode_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode.SCREEN" />
+
+            <RadioButton
+                android:id="@+id/drawable_mode_17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode.ADD" />
+
+            <RadioButton
+                android:id="@+id/drawable_mode_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode.OVERLAY" />
+        </RadioGroup>
+    </android.support.v4.widget.NestedScrollView>
 </LinearLayout>

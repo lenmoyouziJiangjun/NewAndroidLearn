@@ -6,14 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.view.ActionMode;
 import android.support.v7.widget.Toolbar;
-import android.support.v7.widget.ViewUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.lll.common.ui.MiddleLineTextView;
 import com.lll.common.util.StatusBarUtil;
-import com.lll.common.util.ViewUtil;
 import com.lll.learn.R;
 
 public class ToolBarLearnActivity extends AppCompatActivity {
@@ -25,11 +22,10 @@ public class ToolBarLearnActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_v7_learn);
         initToolBar();
-        StatusBarUtil.setStatusBarColor(this,R.color.colorPrimary);
-        ((MiddleLineTextView)findViewById(R.id.test)).setText("ahkjfahdkjhakfjajdkdahk");
+        StatusBarUtil.setStatusBarColor(this, R.color.colorPrimary);
     }
 
-    private void initToolBar(){
+    private void initToolBar() {
         mToolBar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolBar);
         mToolBar.setLogo(R.drawable.ic_favorite);
@@ -43,7 +39,7 @@ public class ToolBarLearnActivity extends AppCompatActivity {
         mToolBar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(v,"返回点击",Snackbar.LENGTH_SHORT).show();
+                Snackbar.make(v, "返回点击", Snackbar.LENGTH_SHORT).show();
             }
         });
 
@@ -63,13 +59,14 @@ public class ToolBarLearnActivity extends AppCompatActivity {
 
     /**
      * 更改模式
+     *
      * @param view
      */
-    public void change(View view){
+    public void change(View view) {
         startSupportActionMode(new ActionMode.Callback() {
             @Override
             public boolean onCreateActionMode(ActionMode mode, Menu menu) {
-                mode.getMenuInflater().inflate(R.menu.actions,menu);
+                mode.getMenuInflater().inflate(R.menu.actions, menu);
                 return true;
             }
 

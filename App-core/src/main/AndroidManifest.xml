@@ -23,7 +23,6 @@
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.BitmapLoaderActivity" />
         <activity android:name=".activity.BannerActivity" />
-        <activity android:name=".activity.ViewDemoActivity" />
         <activity android:name=".activity.viewpager.ViewPagerLearnActivity" />
         <activity
             android:name=".activity.PublicWebViewActivity"
@@ -31,7 +30,9 @@
             android:process=":web" />
         <activity
             android:name=".activity.test.AnimationTestActivity"
-            android:label="@string/title_activity_animation_test"></activity>
+            android:label="@string/title_activity_animation_test" />
+        <activity android:name=".activity.test.CustomViewActivity" />
+        <activity android:name=".activity.test.ProgressViewActivity" />
     </application>
 
 </manifest>

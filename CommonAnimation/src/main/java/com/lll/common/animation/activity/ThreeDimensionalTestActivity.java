@@ -12,9 +12,16 @@ import com.lll.common.animation.R;
  */
 public class ThreeDimensionalTestActivity extends AppCompatActivity {
 
+    private static ThreeDimensionalTestActivity sMainActivity;
+
+    public static ThreeDimensionalTestActivity getInstance() {
+        return sMainActivity;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        sMainActivity = this;
         setContentView(R.layout.activity_three_dimensional_test);
     }
 }

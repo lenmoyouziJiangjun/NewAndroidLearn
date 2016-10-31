@@ -27,6 +27,8 @@ import java.util.List;
  * CopyRight lll
  */
 public class ViewAnimationTestActivity extends AnimationTestBaseActivity {
+
+
     @Override
     public List<String> getDatas() {
         List<String> datas = new ArrayList<>();

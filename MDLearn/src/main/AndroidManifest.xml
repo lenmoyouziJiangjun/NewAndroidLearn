@@ -47,7 +47,8 @@
         <activity
             android:name=".v4.DragLayoutActivity"
             android:label="@string/title_activity_drag_layout"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".v4.SwipeRefreshLayoutActivity"></activity>
     </application>
 
 </manifest>

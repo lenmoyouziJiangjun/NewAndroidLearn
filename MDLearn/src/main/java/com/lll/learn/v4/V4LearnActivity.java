@@ -15,8 +15,9 @@ public class V4LearnActivity extends BaseListStringActivity {
     public Map<String, Class> getDatas() {
         Map<String, Class> maps = new LinkedHashMap<>(5);
         maps.put("DrawableTintLearn", DrawableCompatActivity.class);
-        maps.put("NestedScroll测试",NestedScrollActivity.class);
-        maps.put("ViewDragHelper",DragLayoutActivity.class);
+        maps.put("NestedScroll测试", NestedScrollActivity.class);
+        maps.put("ViewDragHelper", DragLayoutActivity.class);
+        maps.put("SwipeRefreshLayout测试", SwipeRefreshLayoutActivity.class);
         return maps;
     }
 }

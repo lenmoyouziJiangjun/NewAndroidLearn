@@ -4,12 +4,32 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+
+    <FrameLayout
+        android:id="@+id/fl_t"
+        android:layout_width="100dip"
+        android:layout_height="100dip" />
+
+
     <com.lll.common.ui.MusicVisualizer
         android:id="@+id/playing"
         android:layout_width="200dip"
         android:layout_height="200dip"
-        android:visibility="gone"
         android:layout_centerInParent="true"
-        />
+        android:visibility="gone" />
 
+
+
+    <com.lll.common.ui.imageView.CircleImageView2
+        android:id="@+id/civ"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_below="@id/playing"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dip"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_girl">
+    </com.lll.common.ui.imageView.CircleImageView2>
 </RelativeLayout>
