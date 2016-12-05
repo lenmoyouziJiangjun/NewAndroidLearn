@@ -33,6 +33,7 @@
             android:label="@string/title_activity_animation_test" />
         <activity android:name=".activity.test.CustomViewActivity" />
         <activity android:name=".activity.test.ProgressViewActivity" />
+        <activity android:name=".activity.test.WindowActivity" />
     </application>
 
 </manifest>

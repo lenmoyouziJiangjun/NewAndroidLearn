@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/CommonViewpager/CommonViewpager.iml" filepath="$PROJECT_DIR$/CommonViewpager/CommonViewpager.iml" />
       <module fileurl="file://$PROJECT_DIR$/MDLearn/MDLearn.iml" filepath="$PROJECT_DIR$/MDLearn/MDLearn.iml" />
       <module fileurl="file://$PROJECT_DIR$/NewAndroidLearn.iml" filepath="$PROJECT_DIR$/NewAndroidLearn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PluginLibrary/PluginLibrary.iml" filepath="$PROJECT_DIR$/PluginLibrary/PluginLibrary.iml" />
     </modules>
   </component>
 </project>

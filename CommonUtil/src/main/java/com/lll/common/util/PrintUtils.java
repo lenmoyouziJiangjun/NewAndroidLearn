@@ -15,18 +15,22 @@ import java.util.Set;
 public class PrintUtils {
 
 
-    private PrintUtils(){}
+    private PrintUtils() {
+    }
 
     /**
      * 输出bundle所有参数类型
+     *
      * @param bundle
      */
-    public static void printBundle(Bundle bundle){
-        Set<String> keys= bundle.keySet();
-        for (String key: keys) {
-            Object value=bundle.get(key);
-            LogUtils.d("key======"+key+"=======value====="+String.valueOf(value));
+    public static void printBundle(Bundle bundle) {
+        LogUtils.isDebug = true;
+        Set<String> keys = bundle.keySet();
+        for (String key : keys) {
+            Object value = bundle.get(key);
+            LogUtils.d("key======" + key + "=======value=====" + String.valueOf(value));
         }
+        LogUtils.isDebug = false;
     }
 
 }

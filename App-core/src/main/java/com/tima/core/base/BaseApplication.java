@@ -2,8 +2,12 @@ package com.tima.core.base;
 
 import android.app.Activity;
 import android.app.Application;
+import android.content.ComponentCallbacks;
 import android.content.Context;
+import android.content.res.Configuration;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.multidex.MultiDex;
 import android.support.multidex.MultiDexApplication;
 import android.view.View;
@@ -12,6 +16,9 @@ import android.view.accessibility.AccessibilityNodeInfo;
 
 import com.afollestad.appthemeengine.ATE;
 import com.lll.bitmaploader.cache.ImageCache;
+import com.lll.common.util.logger.Log;
+import com.lll.common.util.logger.LogUtils;
+import com.tima.core.BuildConfig;
 import com.tima.core.R;
 
 /**
@@ -24,11 +31,12 @@ public class BaseApplication extends MultiDexApplication {
 
     @Override
     public void onCreate() {
-//        MultiDex.install(this);
         super.onCreate();
-//        testViewTree();
+        testViewTree();
         setApplicationStyle();
+        LogUtils.isDebug = true;
     }
+
 
     /**
      * 测试公共打点
@@ -38,29 +46,35 @@ public class BaseApplication extends MultiDexApplication {
          * activity 生命周期的监控
          */
         registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
+
             @Override
             public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
-
+                Log.e("lll", "---registerActivityLifecycleCallbacks--onCreate-----" + activity.getComponentName().getClassName());
+                System.out.print("llllllllllllllllllllllllllllllllllllll");
             }
 
             @Override
             public void onActivityStarted(Activity activity) {
+                Log.e("lll", "---registerActivityLifecycleCallbacks--onActivityStarted-----" + activity.getComponentName().getClassName());
 
             }
 
             @Override
             public void onActivityResumed(Activity activity) {
-                //遍历activity的所有View
+                Log.e("lll", "---registerActivityLifecycleCallbacks--onActivityResumed-----" + activity.getComponentName().getClassName());
+//遍历activity的所有View
                 testViewAccess(activity.getWindow().getDecorView().getRootView());
             }
 
             @Override
             public void onActivityPaused(Activity activity) {
+                Log.e("lll", "---registerActivityLifecycleCallbacks--onActivityPaused-----" + activity.getComponentName().getClassName());
 
             }
 
             @Override
             public void onActivityStopped(Activity activity) {
+                Log.e("lll", "---registerActivityLifecycleCallbacks--onActivityStopped-----" + activity.getComponentName().getClassName());
 
             }
 
@@ -71,8 +85,11 @@ public class BaseApplication extends MultiDexApplication {
 
             @Override
             public void onActivityDestroyed(Activity activity) {
+                Log.e("lll", "--registerActivityLifecycleCallbacks---onActivityDestroyed-----" + activity.getComponentName().getClassName());
 
             }
+
+
         });
     }
 
@@ -94,10 +111,36 @@ public class BaseApplication extends MultiDexApplication {
     @Override
     public void onLowMemory() {
         super.onLowMemory();
+        //清理缓存，例如图片库，例如自定义的缓存类
+    }
+
+    public void testComponentCallbacks() {
+        registerComponentCallbacks(new ComponentCallbacks() {
+            @Override
+            public void onConfigurationChanged(Configuration newConfig) {
+
+            }
+
+            @Override
+            public void onLowMemory() {
+
+            }
+        });
     }
 
 
-    private void setApplicationStyle(){
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)
+    public void test() {
+        registerOnProvideAssistDataListener(new OnProvideAssistDataListener() {
+            @Override
+            public void onProvideAssistData(Activity activity, Bundle data) {
+
+            }
+        });
+    }
+
+
+    private void setApplicationStyle() {
         if (!ATE.config(this, "light_theme").isConfigured()) {
             ATE.config(this, "light_theme")
                     .activityTheme(R.style.AppThemeLight)
@@ -128,7 +171,7 @@ public class BaseApplication extends MultiDexApplication {
         }
         if (!ATE.config(this, "dark_theme_notoolbar").isConfigured()) {
             ATE.config(this, "dark_theme_notoolbar")
-                    .activityTheme(R .style.AppThemeDark)
+                    .activityTheme(R.style.AppThemeDark)
                     .coloredActionBar(false)
                     .primaryColorRes(R.color.colorPrimaryDarkDefault)
                     .accentColorRes(R.color.colorAccentDarkDefault)
@@ -137,4 +180,6 @@ public class BaseApplication extends MultiDexApplication {
                     .commit();
         }
     }
+
+
 }

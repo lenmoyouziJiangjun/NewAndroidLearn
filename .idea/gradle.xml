@@ -20,6 +20,7 @@
             <option value="$PROJECT_DIR$/CommonUtil" />
             <option value="$PROJECT_DIR$/CommonViewpager" />
             <option value="$PROJECT_DIR$/MDLearn" />
+            <option value="$PROJECT_DIR$/PluginLibrary" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
