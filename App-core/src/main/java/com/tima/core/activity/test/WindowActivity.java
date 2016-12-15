@@ -3,6 +3,8 @@ package com.tima.core.activity.test;
 import android.os.Bundle;
 import android.widget.ImageView;
 
+import com.lll.common.util.ScreenUtils;
+import com.lll.common.util.logger.LogUtils;
 import com.tima.core.R;
 import com.tima.core.activity.BannerActivity;
 import com.tima.core.base.BaseActivity;
@@ -20,12 +22,20 @@ public class WindowActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_window);
-        test();
+//        test();
+//        getWindowInfo();
     }
 
-    private void test() {
-        ImageView img = (ImageView) findViewById(R.id.img);
-        img.setImageBitmap(BannerActivity.mThum);
+
+//    private void test() {
+//        ImageView img = (ImageView) findViewById(R.id.img);
+//        img.setImageBitmap(BannerActivity.mThum);
+//    }
+
+    private void getWindowInfo() {
+        int[] a = ScreenUtils.getWindowWidthAndHeight(this);
+        LogUtils.e("宽度-------" + a[0]);
+        LogUtils.e("高度-------" + a[1]);
     }
 
 

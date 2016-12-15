@@ -6,6 +6,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 
 import com.lll.learn.DividerItemDecoration;
 import com.lll.learn.R;
@@ -26,8 +27,10 @@ public abstract class BaseListStringActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().addFlags(Window.FEATURE_SWIPE_TO_DISMISS);
         setContentView(R.layout.activity_mdlearn);
         initView();
+
     }
 
 

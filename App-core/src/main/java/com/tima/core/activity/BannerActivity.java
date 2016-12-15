@@ -18,6 +18,7 @@ import com.lll.learn.v4.V4LearnActivity;
 import com.lll.learn.v7.V7LearnActivity;
 import com.tima.core.activity.test.AnimationTestActivity;
 import com.tima.core.activity.test.CustomViewActivity;
+import com.tima.core.activity.test.FrameworkLearnActivity;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -121,6 +122,7 @@ public class BannerActivity extends BaseListStringActivity {
         map.put("进入主界面", MainActivity.class);
         map.put("View效果合集", CustomViewActivity.class);
         map.put("动画效果", AnimationTestActivity.class);
+        map.put("FrameWork学习", FrameworkLearnActivity.class);
 
         return map;
     }

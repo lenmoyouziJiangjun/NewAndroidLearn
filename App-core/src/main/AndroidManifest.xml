@@ -34,6 +34,8 @@
         <activity android:name=".activity.test.CustomViewActivity" />
         <activity android:name=".activity.test.ProgressViewActivity" />
         <activity android:name=".activity.test.WindowActivity" />
+        <activity android:name=".activity.test.FrameworkLearnActivity"
+            android:theme="@style/ThemeBaseLight"/>
     </application>
 
 </manifest>
