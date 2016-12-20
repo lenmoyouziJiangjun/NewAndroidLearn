@@ -19,6 +19,7 @@ import com.lll.learn.v7.V7LearnActivity;
 import com.tima.core.activity.test.AnimationTestActivity;
 import com.tima.core.activity.test.CustomViewActivity;
 import com.tima.core.activity.test.FrameworkLearnActivity;
+import com.tima.core.activity.viewpager.ViewPagerLearnActivity;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -34,7 +35,6 @@ public class BannerActivity extends BaseListStringActivity {
 
     Handler mHandler;
 
-
     private void testHandler() {
         mHandler = new Handler(new Handler.Callback() {
             @Override
@@ -48,67 +48,54 @@ public class BannerActivity extends BaseListStringActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        LogUtils.e("------onCreate---------");
-
-        initThum();
+        LogUtils.i("------onCreate---------");
     }
 
-
-    private void initThum() {
-        if (mThum == null) {
-            mThum = Bitmap.createBitmap(240, 240,
-                    Bitmap.Config.RGB_565);
-            mThum.eraseColor(Color.WHITE);
-        }
-        CaptureUtils.getThumbnails(mThum, getWindow().getDecorView());
-    }
 
     @Override
     protected void onStart() {
         super.onStart();
-        LogUtils.e("------onStart----注册广播-----");
+        LogUtils.i("------onStart----注册广播-----");
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        LogUtils.e("------onRestart---------");
+        LogUtils.i("------onRestart---------");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        LogUtils.e("------onResume----加入UI相关的listener-----");
+        LogUtils.i("------onResume----加入UI相关的listener-----");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        LogUtils.e("------onPause---------");
+        LogUtils.i("------onPause---------");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        LogUtils.e("------onStop-----移除广播，移除listener----");
+        LogUtils.i("------onStop-----移除广播，移除listener----");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        LogUtils.e("------onDestroy---------");
+        LogUtils.i("------onDestroy---------");
     }
 
     @Override
     public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
         super.onSaveInstanceState(outState, outPersistentState);
-        LogUtils.e("");
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        LogUtils.e("");
     }
 
     @Override
@@ -123,12 +110,10 @@ public class BannerActivity extends BaseListStringActivity {
         map.put("View效果合集", CustomViewActivity.class);
         map.put("动画效果", AnimationTestActivity.class);
         map.put("FrameWork学习", FrameworkLearnActivity.class);
+        map.put("ViewPager效果合集", ViewPagerLearnActivity.class);
 
         return map;
     }
-
-
-    public static Bitmap mThum;
 
 
 }

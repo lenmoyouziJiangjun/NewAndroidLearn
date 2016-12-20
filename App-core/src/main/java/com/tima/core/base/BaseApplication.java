@@ -35,6 +35,7 @@ public class BaseApplication extends MultiDexApplication {
         testViewTree();
         setApplicationStyle();
         LogUtils.isDebug = true;
+        LogUtils.e("----------do BaseApplication ----------");
     }
 
 

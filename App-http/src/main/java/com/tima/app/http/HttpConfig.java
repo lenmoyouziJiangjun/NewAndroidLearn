@@ -1,6 +1,6 @@
 package com.tima.app.http;
 
-import com.tima.common.encryption.EncryptionUtils;
+import com.lll.common.encryption.NativeEncryptionUtils;
 
 import java.net.URLEncoder;
 import java.util.Collections;
@@ -21,18 +21,18 @@ public final class HttpConfig {
     private static String sToken;
 
     public static String getAppKey() {
-        return EncryptionUtils.decryptionString(sAppKey);
+        return NativeEncryptionUtils.decryptionString(sAppKey);
     }
 
     public static String getSecretKey() {
-        return EncryptionUtils.decryptionString(sSecretKey);
+        return NativeEncryptionUtils.decryptionString(sSecretKey);
     }
     public static String getToken() {
-        return EncryptionUtils.decryptionString(sToken);
+        return NativeEncryptionUtils.decryptionString(sToken);
     }
 
     public static void setToken(String sToken) {
-        HttpConfig.sToken = EncryptionUtils.encryptionString(sToken);
+        HttpConfig.sToken = NativeEncryptionUtils.encryptionString(sToken);
     }
 
     /**
@@ -65,6 +65,6 @@ public final class HttpConfig {
 //            baseString1 = sb.toString();
             throw  new RuntimeException("not support utf-8 encode");
         }
-        return EncryptionUtils.getSign(baseString1);
+        return NativeEncryptionUtils.getSign(baseString1);
     }
 }

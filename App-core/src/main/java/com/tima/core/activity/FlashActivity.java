@@ -31,7 +31,7 @@ public class FlashActivity extends BaseActivity {
     }
 
     /**
-     * 细节1:闪屏界面一般是全屏界面
+     * 细节1:闪屏界面一般是全屏界面。设置背景的Window透明，解决启动黑屏
      */
     private void setWindowFlag(){
         requestWindowFeature(Window.FEATURE_NO_TITLE);

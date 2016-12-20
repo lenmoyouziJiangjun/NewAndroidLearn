@@ -17,4 +17,13 @@
         <attr name="pstsTextAllCaps" format="boolean" />
     </declare-styleable>
 
+    <declare-styleable name="IndicatorViewPager">
+        <attr name="indicatorBg" format="reference"/>
+        <attr name="indicatorLocation" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+
 </resources>
