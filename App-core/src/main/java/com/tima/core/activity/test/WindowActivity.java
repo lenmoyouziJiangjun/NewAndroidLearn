@@ -1,12 +1,10 @@
 package com.tima.core.activity.test;
 
 import android.os.Bundle;
-import android.widget.ImageView;
 
 import com.lll.common.util.ScreenUtils;
-import com.lll.common.util.logger.LogUtils;
+import com.lll.common.util.LogUtils;
 import com.tima.core.R;
-import com.tima.core.activity.BannerActivity;
 import com.tima.core.base.BaseActivity;
 
 /**

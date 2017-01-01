@@ -65,6 +65,7 @@ public class ScreenUtils {
     }
 
     /**
+     * 获取屏幕方向
      * @param ctx
      * @return
      */

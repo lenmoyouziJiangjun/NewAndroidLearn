@@ -28,6 +28,7 @@ public class RecycleViewLearnActivity extends BaseListStringActivity {
         datas.put("StaggeredGridLayoutManager流水布局", StaggeredGridLayoutManagerActivity.class);
         datas.put("item的拖拽学习",DragAndDropActivity.class);
         datas.put("item的左右滑动学习",SwipeToDismissActivity.class);
+        datas.put("RecycleView上拉加载和下拉刷新",SwipeToDismissActivity.class);
         return datas;
     }
 }

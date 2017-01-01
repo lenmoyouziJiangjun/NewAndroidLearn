@@ -1,19 +1,14 @@
 package com.tima.core.activity;
 
-import android.graphics.Bitmap;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.PersistableBundle;
 
-import com.lll.common.util.CaptureUtils;
-import com.lll.common.util.logger.Log;
-import com.lll.common.util.logger.LogUtils;
+import com.lll.common.util.LogUtils;
 import com.lll.learn.base.BaseListStringActivity;
 import com.lll.learn.md.MDLearnActivity;
 import com.lll.learn.recycleView.RecycleViewLearnActivity;
-import com.lll.learn.v4.DrawableCompatActivity;
 import com.lll.learn.v4.V4LearnActivity;
 import com.lll.learn.v7.V7LearnActivity;
 import com.tima.core.activity.test.AnimationTestActivity;

@@ -1,24 +1,19 @@
 package com.tima.core.base;
 
 import android.app.Activity;
-import android.app.Application;
 import android.content.ComponentCallbacks;
-import android.content.Context;
 import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
-import android.support.multidex.MultiDex;
 import android.support.multidex.MultiDexApplication;
 import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 
 import com.afollestad.appthemeengine.ATE;
-import com.lll.bitmaploader.cache.ImageCache;
 import com.lll.common.util.logger.Log;
-import com.lll.common.util.logger.LogUtils;
-import com.tima.core.BuildConfig;
+import com.lll.common.util.LogUtils;
 import com.tima.core.R;
 
 /**

@@ -5,7 +5,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.2'
+        classpath 'com.android.tools.build:gradle:2.2.3'
         classpath 'com.antfortune.freeline:gradle:0.5.5'
 //发布aar 到Jcenter和Maven库
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.4'
