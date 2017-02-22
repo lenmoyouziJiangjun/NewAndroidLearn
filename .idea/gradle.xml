@@ -23,6 +23,7 @@
             <option value="$PROJECT_DIR$/MDLearn" />
             <option value="$PROJECT_DIR$/PluginLibrary" />
             <option value="$PROJECT_DIR$/SystemViewLearn" />
+            <option value="$PROJECT_DIR$/h5conntainer" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

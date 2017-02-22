@@ -1,6 +1,6 @@
 package com.tima.app.http;
 
-import com.tima.common.http.HttpClient;
+import com.lll.common.http.HttpClient;
 import com.lll.common.util.LogUtils;
 import com.lll.common.util.PropertyUtils;
 

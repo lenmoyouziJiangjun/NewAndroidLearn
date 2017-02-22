@@ -1,1 +1,1 @@
-include ':App-release', ':CommonHttp', ':CommonUi', ':App-core', ':App-http', ':CommonUtil', ':CommonEncryption', ':MDLearn', ':CommonViewpager', ':BitmapLoader', ':CommonAnimation', ':CommonAdapter', ':PluginLibrary', ':SystemViewLearn', ':CommonRefresh'
+include ':App-release', ':CommonHttp', ':CommonUi', ':App-core', ':App-http', ':CommonUtil', ':CommonEncryption', ':MDLearn', ':CommonViewpager', ':BitmapLoader', ':CommonAnimation', ':CommonAdapter', ':PluginLibrary', ':SystemViewLearn', ':CommonRefresh', ':h5conntainer'

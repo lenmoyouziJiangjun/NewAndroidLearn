@@ -18,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/NewAndroidLearn.iml" filepath="$PROJECT_DIR$/NewAndroidLearn.iml" />
       <module fileurl="file://$PROJECT_DIR$/PluginLibrary/PluginLibrary.iml" filepath="$PROJECT_DIR$/PluginLibrary/PluginLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/SystemViewLearn/SystemViewLearn.iml" filepath="$PROJECT_DIR$/SystemViewLearn/SystemViewLearn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/h5conntainer/h5conntainer.iml" filepath="$PROJECT_DIR$/h5conntainer/h5conntainer.iml" />
     </modules>
   </component>
 </project>
