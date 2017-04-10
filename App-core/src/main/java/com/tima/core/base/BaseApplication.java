@@ -7,12 +7,12 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
 import android.support.multidex.MultiDexApplication;
+import android.util.Log;
 import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 
 import com.afollestad.appthemeengine.ATE;
-import com.lll.common.util.logger.Log;
 import com.lll.common.util.LogUtils;
 import com.tima.core.R;
 

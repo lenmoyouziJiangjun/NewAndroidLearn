@@ -16,13 +16,13 @@
             <option value="$PROJECT_DIR$/CommonAnimation" />
             <option value="$PROJECT_DIR$/CommonEncryption" />
             <option value="$PROJECT_DIR$/CommonHttp" />
-            <option value="$PROJECT_DIR$/CommonRefresh" />
             <option value="$PROJECT_DIR$/CommonUi" />
             <option value="$PROJECT_DIR$/CommonUtil" />
             <option value="$PROJECT_DIR$/CommonViewpager" />
             <option value="$PROJECT_DIR$/MDLearn" />
             <option value="$PROJECT_DIR$/PluginLibrary" />
             <option value="$PROJECT_DIR$/SystemViewLearn" />
+            <option value="$PROJECT_DIR$/commonmedia" />
             <option value="$PROJECT_DIR$/h5conntainer" />
           </set>
         </option>

@@ -16,8 +16,8 @@ import java.util.Map;
  * CopyRight lll
  */
 public final class HttpConfig {
-    private static String sAppKey="";
-    private static String sSecretKey="";
+    private static String sAppKey = "";
+    private static String sSecretKey = "";
     private static String sToken;
 
     public static String getAppKey() {
@@ -27,6 +27,7 @@ public final class HttpConfig {
     public static String getSecretKey() {
         return NativeEncryptionUtils.decryptionString(sSecretKey);
     }
+
     public static String getToken() {
         return NativeEncryptionUtils.decryptionString(sToken);
     }
@@ -37,11 +38,12 @@ public final class HttpConfig {
 
     /**
      * 生成签名
+     *
      * @param appendUrl
      * @param params
      * @return
      */
-    public static String getSign(String appendUrl, Map params){
+    public static String getSign(String appendUrl, Map params) {
         LinkedList parameters = new LinkedList(params.entrySet());
         Collections.sort(parameters, new Comparator<Map.Entry<String, String>>() {
             public int compare(Map.Entry<String, String> o1, Map.Entry<String, String> o2) {
@@ -58,12 +60,11 @@ public final class HttpConfig {
         }
 
         sb.append(getSecretKey());
-        String baseString1=null;
+        String baseString1 = null;
         try {
             baseString1 = URLEncoder.encode(sb.toString(), "UTF-8");
-        }catch (Exception e){
-//            baseString1 = sb.toString();
-            throw  new RuntimeException("not support utf-8 encode");
+        } catch (Exception e) {
+            throw new RuntimeException("not support utf-8 encode");
         }
         return NativeEncryptionUtils.getSign(baseString1);
     }

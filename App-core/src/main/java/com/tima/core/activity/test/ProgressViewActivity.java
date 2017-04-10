@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.lll.common.ui.progressView.CircularSeekBar;
-import com.lll.common.util.logger.Log;
 import com.tima.core.R;
 import com.tima.core.base.BaseActivity;
 
@@ -46,7 +45,7 @@ public class ProgressViewActivity extends BaseActivity {
         mSeekBar.setOnSeekBarChangeListener(new CircularSeekBar.OnCircularSeekBarChangeListener() {
             @Override
             public void onProgressChanged(CircularSeekBar seekBar, int progress, boolean fromUser) {
-                Log.e("lll", tag + "-----seekBar---" + progress);
+//                Log.e("lll", tag + "-----seekBar---" + progress);
             }
 
             @Override
