@@ -9,7 +9,6 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/App-core" />
-            <option value="$PROJECT_DIR$/App-http" />
             <option value="$PROJECT_DIR$/App-release" />
             <option value="$PROJECT_DIR$/BitmapLoader" />
             <option value="$PROJECT_DIR$/CommonAdapter" />

@@ -9,7 +9,7 @@
         android:label="@string/app_name"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:supportsRtl="true"
-        android:name="com.tima.core.base.BaseApplication"
+        android:name=".core.base.BaseApplication"
         tools:replace="theme,label">
 
     </application>

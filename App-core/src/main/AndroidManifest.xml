@@ -7,34 +7,34 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name=".base.BaseApplication"
+        android:name="com.lll.core.base.BaseApplication"
         android:allowBackup="true"
         android:label="@string/app_name"
         android:supportsRtl="true">
-        <activity android:name=".activity.FlashActivity">
+        <activity android:name="com.lll.core.activity.FlashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.LoginActivity" />
-        <activity android:name=".learn.AnimatedRecyclerView" />
-        <activity android:name=".activity.MainActivity" />
-        <activity android:name=".activity.BitmapLoaderActivity" />
-        <activity android:name=".activity.BannerActivity" />
-        <activity android:name=".activity.viewpager.ViewPagerLearnActivity" />
+        <activity android:name="com.lll.core.activity.LoginActivity" />
+        <activity android:name="com.lll.core.learn.AnimatedRecyclerView" />
+        <activity android:name="com.lll.core.activity.MainActivity" />
+        <activity android:name="com.lll.core.activity.BitmapLoaderActivity" />
+        <activity android:name="com.lll.core.activity.BannerActivity" />
+        <activity android:name="com.lll.core.activity.viewpager.ViewPagerLearnActivity" />
         <activity
-            android:name=".activity.PublicWebViewActivity"
+            android:name="com.lll.core.activity.PublicWebViewActivity"
             android:exported="true"
             android:process=":web" />
         <activity
-            android:name=".activity.test.AnimationTestActivity"
+            android:name="com.lll.core.activity.test.AnimationTestActivity"
             android:label="@string/title_activity_animation_test" />
-        <activity android:name=".activity.test.CustomViewActivity" />
-        <activity android:name=".activity.test.ProgressViewActivity" />
-        <activity android:name=".activity.test.WindowActivity" />
-        <activity android:name=".activity.test.FrameworkLearnActivity"
+        <activity android:name="com.lll.core.activity.test.CustomViewActivity" />
+        <activity android:name="com.lll.core.activity.test.ProgressViewActivity" />
+        <activity android:name="com.lll.core.activity.test.WindowActivity" />
+        <activity android:name="com.lll.core.activity.test.FrameworkLearnActivity"
             android:theme="@style/ThemeBaseLight"/>
     </application>
 

@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/App-core/App-core.iml" filepath="$PROJECT_DIR$/App-core/App-core.iml" />
-      <module fileurl="file://$PROJECT_DIR$/App-http/App-http.iml" filepath="$PROJECT_DIR$/App-http/App-http.iml" />
       <module fileurl="file://$PROJECT_DIR$/App-release/App-release.iml" filepath="$PROJECT_DIR$/App-release/App-release.iml" />
       <module fileurl="file://$PROJECT_DIR$/BitmapLoader/BitmapLoader.iml" filepath="$PROJECT_DIR$/BitmapLoader/BitmapLoader.iml" />
       <module fileurl="file://$PROJECT_DIR$/CommonAdapter/CommonAdapter.iml" filepath="$PROJECT_DIR$/CommonAdapter/CommonAdapter.iml" />
