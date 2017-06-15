@@ -1,14 +1,14 @@
 Executable : /Users/liaoxueyan/Documents/soft/android-ndk-r11b/ndk-build
 arguments : 
 NDK_PROJECT_PATH=null
-APP_BUILD_SCRIPT=/Users/liaoxueyan/Documents/androidspace/NewAndroidLearn/CommonEncryption/src/main/jni/Android.mk
-NDK_APPLICATION_MK=/Users/liaoxueyan/Documents/androidspace/NewAndroidLearn/CommonEncryption/src/main/jni/Application.mk
+APP_BUILD_SCRIPT=/Users/liaoxueyan/Documents/workspace/androidspace/NewAndroidLearn/CommonEncryption/src/main/jni/Android.mk
+NDK_APPLICATION_MK=/Users/liaoxueyan/Documents/workspace/androidspace/NewAndroidLearn/CommonEncryption/src/main/jni/Application.mk
 APP_ABI=armeabi
 NDK_ALL_ABIS=armeabi
 NDK_DEBUG=0
 APP_PLATFORM=android-15
-NDK_OUT=/Users/liaoxueyan/Documents/androidspace/NewAndroidLearn/CommonEncryption/build/intermediates/ndkBuild/release/obj
-NDK_LIBS_OUT=/Users/liaoxueyan/Documents/androidspace/NewAndroidLearn/CommonEncryption/build/intermediates/ndkBuild/release/lib
+NDK_OUT=/Users/liaoxueyan/Documents/workspace/androidspace/NewAndroidLearn/CommonEncryption/build/intermediates/ndkBuild/release/obj
+NDK_LIBS_OUT=/Users/liaoxueyan/Documents/workspace/androidspace/NewAndroidLearn/CommonEncryption/build/intermediates/ndkBuild/release/lib
 APP_SHORT_COMMANDS=false
 LOCAL_SHORT_COMMANDS=false
 -B

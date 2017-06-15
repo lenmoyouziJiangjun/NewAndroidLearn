@@ -25,7 +25,7 @@ import java.util.Map;
  * Description
  * copyright generalray4239@gmail.com
  */
-public class BannerActivity extends BaseListStringActivity {
+public class  BannerActivity extends BaseListStringActivity {
 
 
     Handler mHandler;

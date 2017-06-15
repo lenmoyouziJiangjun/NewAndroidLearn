@@ -128,7 +128,7 @@ public class PathUtils {
      * @return Whether the Uri authority is DownloadsProvider.
      */
     public static boolean isDownloadsDocument(Uri uri) {
-        return "com.android.providers.downloads.documents".equals(uri.getAuthority());
+        return "com.downloads.documents".equals(uri.getAuthority());
     }
 
     /**

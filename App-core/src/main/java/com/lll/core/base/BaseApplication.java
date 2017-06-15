@@ -1,11 +1,14 @@
 package com.lll.core.base;
 
 import android.app.Activity;
+import android.app.Application;
 import android.content.ComponentCallbacks;
+import android.content.Context;
 import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
+import android.support.multidex.MultiDex;
 import android.support.multidex.MultiDexApplication;
 import android.util.Log;
 import android.view.View;
@@ -14,6 +17,7 @@ import android.view.accessibility.AccessibilityNodeInfo;
 
 import com.afollestad.appthemeengine.ATE;
 import com.lll.common.util.LogUtils;
+import com.lll.core.hook.HookHelper;
 import com.tima.core.R;
 
 /**
@@ -22,7 +26,16 @@ import com.tima.core.R;
  * Created by lll on 2016/5/3.
  * CopyRight lll
  */
-public class BaseApplication extends MultiDexApplication {
+public class BaseApplication extends Application {
+
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
+        HookHelper.hookActivityManager();
+        HookHelper.hookPackageManager(base);
+    }
 
     @Override
     public void onCreate() {
@@ -30,7 +43,6 @@ public class BaseApplication extends MultiDexApplication {
         testViewTree();
         setApplicationStyle();
         LogUtils.isDebug = true;
-        LogUtils.e("----------do BaseApplication ----------");
     }
 
 
@@ -126,7 +138,7 @@ public class BaseApplication extends MultiDexApplication {
 
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)
-    public void test() {
+    public void test2() {
         registerOnProvideAssistDataListener(new OnProvideAssistDataListener() {
             @Override
             public void onProvideAssistData(Activity activity, Bundle data) {

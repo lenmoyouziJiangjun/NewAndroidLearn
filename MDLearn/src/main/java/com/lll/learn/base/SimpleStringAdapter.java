@@ -1,5 +1,6 @@
 package com.lll.learn.base;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -97,8 +98,6 @@ public class SimpleStringAdapter extends RecyclerView.Adapter<SimpleStringAdapte
             super(itemView);
             mTextView = itemView;
         }
-
-
     }
 
     /**
@@ -111,6 +110,7 @@ public class SimpleStringAdapter extends RecyclerView.Adapter<SimpleStringAdapte
 
         Intent intent = new Intent(mContext,mDatas.get(skey));
         mContext.startActivity(intent);
+//        ((Activity)mContext).overridePendingTransition();
     }
 
     /**

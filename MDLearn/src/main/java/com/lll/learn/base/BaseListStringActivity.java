@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 
+import com.lll.common.util.LogUtils;
 import com.lll.learn.DividerItemDecoration;
 import com.lll.learn.R;
 
@@ -27,7 +28,8 @@ public abstract class BaseListStringActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().addFlags(Window.FEATURE_SWIPE_TO_DISMISS);
+        //左滑出现anr了。不晓得什么原因，
+//        getWindow().addFlags(Window.FEATURE_SWIPE_TO_DISMISS);
         setContentView(R.layout.activity_mdlearn);
         initView();
 
@@ -59,4 +61,9 @@ public abstract class BaseListStringActivity extends AppCompatActivity {
 
     public abstract Map<String,Class> getDatas();
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        LogUtils.e("----------------------");
+    }
 }
