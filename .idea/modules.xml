@@ -17,7 +17,9 @@
       <module fileurl="file://$PROJECT_DIR$/PluginLibrary/PluginLibrary.iml" filepath="$PROJECT_DIR$/PluginLibrary/PluginLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/SystemViewLearn/SystemViewLearn.iml" filepath="$PROJECT_DIR$/SystemViewLearn/SystemViewLearn.iml" />
       <module fileurl="file://$PROJECT_DIR$/commonmedia/commonmedia.iml" filepath="$PROJECT_DIR$/commonmedia/commonmedia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gradleplugin/gradleplugin.iml" filepath="$PROJECT_DIR$/gradleplugin/gradleplugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/h5conntainer/h5conntainer.iml" filepath="$PROJECT_DIR$/h5conntainer/h5conntainer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pluginlearn/pluginlearn.iml" filepath="$PROJECT_DIR$/pluginlearn/pluginlearn.iml" />
     </modules>
   </component>
 </project>

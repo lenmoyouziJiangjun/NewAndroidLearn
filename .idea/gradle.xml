@@ -22,7 +22,9 @@
             <option value="$PROJECT_DIR$/PluginLibrary" />
             <option value="$PROJECT_DIR$/SystemViewLearn" />
             <option value="$PROJECT_DIR$/commonmedia" />
+            <option value="$PROJECT_DIR$/gradleplugin" />
             <option value="$PROJECT_DIR$/h5conntainer" />
+            <option value="$PROJECT_DIR$/pluginlearn" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

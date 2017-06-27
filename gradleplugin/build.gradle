@@ -1,0 +1,25 @@
+apply plugin:'groovy'
+apply plugin:'maven'
+
+
+dependencies{
+    compile gradleApi()
+    compile localGroovy()
+}
+
+
+
+repositories{
+    mavenCentral();
+}
+
+//上传到本地maven仓库
+group='com.lll.gradle.plugin' //maven 库的坐标
+version = '1.0.0'
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri('../repo'))
+        }
+    }
+}
